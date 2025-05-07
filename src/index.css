@@ -1,0 +1,108 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 10% 5%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 10% 5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 10% 5%;
+
+    --primary: 34 11% 84%;  /* Updated to match DEDBD1 */
+    --primary-foreground: 20 10% 5%;
+
+    --secondary: 60 6% 96%;
+    --secondary-foreground: 20 10% 5%;
+
+    --muted: 60 5% 96%;
+    --muted-foreground: 25 5% 45%;
+
+    --accent: 34 11% 84%;  /* Updated to match DEDBD1 */
+    --accent-foreground: 20 10% 5%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 20 5% 90%;
+    --input: 20 5% 90%;
+    --ring: 34 11% 84%;  /* Updated to match DEDBD1 */
+
+    --radius: 0.4rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-offwhite text-charcoal font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-normal text-center md:text-left;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl leading-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl leading-snug;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl leading-snug;
+  }
+
+  p {
+    @apply leading-relaxed text-base md:text-lg;
+  }
+
+  .section {
+    @apply py-12 md:py-16 lg:py-24;
+  }
+
+  .container-custom {
+    @apply container mx-auto px-4 md:px-8 max-w-7xl;
+  }
+
+  .quote {
+    @apply font-serif text-xl md:text-2xl lg:text-3xl italic leading-relaxed text-center md:text-left;
+  }
+  
+  /* Luxury styling additions */
+  .luxury-title {
+    @apply font-serif text-3xl md:text-4xl lg:text-5xl font-light tracking-wide leading-tight text-center md:text-left;
+  }
+  
+  .luxury-subtitle {
+    @apply font-serif text-xl md:text-2xl italic font-light tracking-wide text-center md:text-left;
+  }
+  
+  /* Project page specific styles */
+  .project-hero {
+    @apply h-[50vh] md:h-[60vh] lg:h-[70vh] bg-cover bg-center relative;
+  }
+  
+  .project-gallery-item {
+    @apply h-64 md:h-80 bg-cover bg-center cursor-pointer overflow-hidden;
+  }
+  
+  /* WhatsApp floating button */
+  .whatsapp-button {
+    @apply fixed bottom-6 right-6 md:bottom-8 md:right-8 z-40 w-12 h-12 md:w-14 md:h-14 
+           bg-green-500 text-white rounded-full flex items-center justify-center 
+           shadow-lg hover:bg-green-600 transition-colors duration-300;
+  }
+}
