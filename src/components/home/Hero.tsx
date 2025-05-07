@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 export default function Hero() {
   return <section className="relative min-h-screen flex items-center">
       <div className="absolute inset-0 z-0 bg-cover bg-center" style={{
-      backgroundImage: "url('https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=2874&auto=format&fit=crop')",
+      backgroundImage: "url('/lovable-uploads/0.jpg')",
       backgroundPosition: "center 80%"
     }}>
         <div className="absolute inset-0 bg-black opacity-10"></div>
