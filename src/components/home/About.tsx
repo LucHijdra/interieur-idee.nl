@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function About() {
   return <section id="about" className="section bg-offwhite">
       <div className="container-custom">
@@ -24,7 +26,12 @@ export default function About() {
                 geregistreerd in het landelijk register voor
                 interieurarchitecten.
               </p>
-              <p className="mt-4 text-sm">+31654994964</p>
+              <Link 
+                to="/contact" 
+                className="inline-block mt-4 px-6 py-2 border border-taupe text-charcoal hover:bg-taupe hover:text-white transition-colors"
+              >
+                Contact
+              </Link>
             </div>
           </div>
           <div className="flex justify-center items-center">
