@@ -2,13 +2,7 @@ export default function Philosophy() {
   return (
     <section className="section bg-white">
       <div className="container-custom">
-        <div className="max-w-4xl mx-auto text-center mb-8">
-          <p className="text-xl">
-            "In een interieur vind ik het belangrijk dat niet alles zo uit een showroom
-            gehaald is. Juist de combinatie tussen oude, bestaande en nieuwe materialen maakt
-            een ruimte spannend en meer eigen."
-          </p>
-        </div>
+
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
           <div className="flex flex-col items-center text-center">

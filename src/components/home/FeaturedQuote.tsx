@@ -6,7 +6,7 @@ export default function FeaturedQuote() {
     <section className="section bg-taupe">
       <div className="container-custom">
         <Quote 
-          text="Speciaal op maat gemaakte onderdelen zorgen dat lijnen doorlopen waardoor er meer samenhang is meer rust ontstaat."
+          text="In een interieur vind ik het belangrijk dat niet alles zo uit een showroom gehaald is. Juist de combinatie tussen oude, bestaande en nieuwe materialen maakt een ruimte spannend en meer eigen."
           author="Guusje Bosman"
           className="text-charcoal"
         />
