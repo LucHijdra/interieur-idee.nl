@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className="container-custom flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <img 
-            src="/lovable-uploads/31876e33-aa33-4946-adde-bf2788078a9e.png" 
+            src="/lovable-uploads/interieur-idee logo.png" 
             alt="Interieur-Idee Logo" 
             className="h-8 md:h-10"
           />

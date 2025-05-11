@@ -181,20 +181,6 @@ export default function ProjectDetail() {
         </div>
       </section>
       
-      {/* Testimonial */}
-      {project.testimonial && (
-        <section className="section bg-taupe">
-          <div className="container-custom">
-            <blockquote className="max-w-4xl mx-auto">
-              <p className="quote text-center mb-6">"{project.testimonial.quote}"</p>
-              <cite className="block text-center not-italic font-medium">
-                — {project.testimonial.author}
-              </cite>
-            </blockquote>
-          </div>
-        </section>
-      )}
-      
       {/* WhatsApp Button */}
       <a 
         href={`https://wa.me/31654994964`} 

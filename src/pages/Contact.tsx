@@ -54,25 +54,14 @@ export default function Contact() {
                   <p>info@interieur-idee.nl</p>
                 </div>
               </div>
-              
-              <div>
-                <p className="font-medium mb-1">KVK</p>
-                <p>27325511</p>
-              </div>
             </div>
             
-            <div className="h-64 md:h-96 bg-gray-200">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.6988185235585!2d4.353765900000001!3d51.999051300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5c1dcc4d58d%3A0x89b4fd41c4529137!2svan%20der%20Mastenstraat%2C%20Delft!5e0!3m2!1snl!2snl!4v1714059617410!5m2!1snl!2snl" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Locatie Interieur-Idee"
-                className="rounded-lg shadow-md"
-              ></iframe>
+            <div className="flex justify-center">
+              <img 
+                src="/lovable-uploads/guusje bosman.png"
+                alt="Guusje Bosman" 
+                className="w-auto h-auto max-w-[300px] rounded-lg"
+              />
             </div>
           </div>
         </div>

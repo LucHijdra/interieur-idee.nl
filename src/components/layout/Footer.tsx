@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <div className="mb-6 flex justify-center md:justify-start">
               <img 
-                src="/lovable-uploads/31876e33-aa33-4946-adde-bf2788078a9e.png" 
+                src="/lovable-uploads/interieur-idee logo.png" 
                 alt="Interieur-Idee Logo" 
                 className="h-10"
               />
@@ -54,7 +54,7 @@ export default function Footer() {
         
         <div className="border-t border-taupe border-opacity-20 pt-6">
           <p className="text-xs text-center">
-            © {currentYear} Interieur-Idee | Fotografie: Barbra Verbij
+            © {currentYear} Interieur-Idee
           </p>
         </div>
       </div>

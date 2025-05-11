@@ -1,7 +1,13 @@
-
 import { useEffect } from "react";
 import SectionTitle from "@/components/shared/SectionTitle";
 import Quote from "@/components/shared/Quote";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Aanpak() {
   useEffect(() => {
@@ -35,7 +41,10 @@ export default function Aanpak() {
                 beeld krijgt van het beoogde resultaat.
               </p>
             </div>
-            <div className="h-[400px] bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=2092&auto=format&fit=crop')" }}></div>
+            <div className="flex flex-col">
+              <div className="h-[500px] bg-contain bg-center bg-no-repeat" style={{ backgroundImage: "url('/lovable-uploads/Afbeelding9 - Bewerkt.png')" }}></div>
+              <p className="mt-4 text-center text-sm">Plattegrond bestaande situatie & Plattegrond gewijzigde situatie</p>
+            </div>
           </div>
         </div>
       </section>
@@ -96,17 +105,46 @@ export default function Aanpak() {
       
       <section className="section">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="lg:order-2">
-              <h2 className="mb-6">Persoonlijke benadering</h2>
-              <p className="mb-4">
-                Bij Interieur-Idee staat uw visie en wensen centraal in ons ontwerpproces. Wij geloven dat een succesvol interieurontwerp voortkomt uit een nauwe samenwerking met de opdrachtgever.
-              </p>
-              <p>
-                Onze aanpak is transparant en persoonlijk, met korte communicatielijnen en duidelijke afspraken. Deze werkwijze zorgt voor een prettig verloop van het traject en een eindresultaat waar u volledig tevreden mee bent.
-              </p>
-            </div>
-            <div className="h-[400px] bg-cover bg-center lg:order-1" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop')" }}></div>
+          {/* Desktop view - static images */}
+          <div className="hidden md:grid md:grid-cols-3 gap-8">
+            {['/lovable-uploads/3.jpg', '/lovable-uploads/9.jpg', '/lovable-uploads/14.jpg'].map((image, index) => (
+              <div key={index} className="relative w-full pb-[177.78%]">
+                <div 
+                  className="absolute inset-0 bg-cover bg-center" 
+                  style={{ backgroundImage: `url('${image}')` }}
+                ></div>
+              </div>
+            ))}
+          </div>
+
+          {/* Mobile view - carousel */}
+          <div className="md:hidden">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {['/lovable-uploads/3.jpg', '/lovable-uploads/9.jpg', '/lovable-uploads/14.jpg'].map((image, index) => (
+                  <CarouselItem key={index}>
+                    <div className="relative w-full pb-[177.78%]">
+                      <div 
+                        className="absolute inset-0 bg-cover bg-center" 
+                        style={{ backgroundImage: `url('${image}')` }}
+                      ></div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <div className="absolute -left-4 top-1/2 -translate-y-1/2">
+                <CarouselPrevious />
+              </div>
+              <div className="absolute -right-4 top-1/2 -translate-y-1/2">
+                <CarouselNext />
+              </div>
+            </Carousel>
           </div>
         </div>
       </section>
