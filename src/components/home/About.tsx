@@ -5,7 +5,7 @@ export default function About() {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="mb-6">Over Interieur-Idee</h2>
+            <h2 className="mb-6 text-left lg:text-left text-center">Over Interieur-Idee</h2>
             <p className="mb-4">
               Met een scherp oog voor esthetiek en
               functionaliteit vertalen wij uw wensen naar een

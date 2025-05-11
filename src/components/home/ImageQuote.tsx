@@ -26,10 +26,10 @@ export default function ImageQuote({ className }: ImageQuoteProps) {
           />
         </div>
         <div className="mt-12 text-center max-w-3xl mx-auto">
-          <blockquote className="font-mono text-lg md:text-xl italic">
+          <blockquote className="font-sans text-lg md:text-xl italic">
             "Speciaal op maat gemaakte onderdelen zorgen dat lijnen doorlopen waardoor er meer samenhang is meer rust ontstaat."
           </blockquote>
-          <p className="mt-6 text-sm text-gray-600 italic">
+          <p className="mt-6 text-sm text-gray-600 italic font-sans">
             fotografie: Barbra Verbij
           </p>
         </div>

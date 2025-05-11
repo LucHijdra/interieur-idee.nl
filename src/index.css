@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -37,7 +36,8 @@
   }
 
   * {
-    @apply border-border;
+    @apply border-border font-sans;
+    font-family: 'Poppins', sans-serif;
   }
 
   html {
@@ -46,39 +46,67 @@
 
   body {
     @apply bg-offwhite text-charcoal font-sans;
+    font-family: 'Poppins', sans-serif;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif font-normal text-center md:text-left;
+    @apply font-bold text-center md:text-left font-sans;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
   }
 
   h1 {
     @apply text-3xl md:text-4xl lg:text-5xl leading-tight;
+    font-size: 1.875rem;
+    font-size: clamp(1.875rem, 4vw, 3rem);
+    line-height: 1.2;
   }
 
   h2 {
     @apply text-3xl md:text-4xl leading-snug;
+    font-size: 1.875rem;
+    font-size: clamp(1.875rem, 3vw, 2.25rem);
+    line-height: 1.3;
   }
 
   h3 {
     @apply text-2xl md:text-3xl leading-snug;
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+    line-height: 1.3;
   }
 
   p {
     @apply leading-relaxed text-base md:text-lg;
+    line-height: 1.7;
+    font-size: 1rem;
   }
 
   .section {
     @apply py-12 md:py-16 lg:py-24;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .container-custom {
     @apply container mx-auto px-4 md:px-8 max-w-7xl;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 2rem;
   }
 
   .quote {
-    @apply font-serif text-xl md:text-2xl lg:text-3xl italic leading-relaxed text-center md:text-left;
+    @apply font-sans text-xl md:text-2xl lg:text-3xl italic leading-relaxed text-center md:text-left;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 2vw, 2rem);
+    line-height: 1.5;
+    text-align: center;
   }
   
   /* Luxury styling additions */

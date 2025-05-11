@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
@@ -35,7 +34,7 @@ export default function ProjectCard({
           <p className="text-white/80 text-sm uppercase tracking-wider font-light mb-2">
             {category}
           </p>
-          <h3 className="text-white font-serif text-xl md:text-2xl tracking-wide">
+          <h3 className="text-white font-bold font-sans text-xl md:text-2xl tracking-wide">
             {title}
           </h3>
           <div className="h-0.5 w-12 bg-taupe mt-4 mb-2 transform origin-left scale-0 group-hover:scale-100 transition-transform duration-300"></div>

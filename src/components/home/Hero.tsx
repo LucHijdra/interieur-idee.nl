@@ -10,7 +10,7 @@ export default function Hero() {
       
       <div className="container-custom relative z-10 mt-20 md:mt-0">
         <div className="max-w-3xl">
-          <h1 className="text-white mb-6 drop-shadow-md text-left">
+          <h1 className="text-white mb-6 drop-shadow-md text-left font-bold font-sans">
             Interieur-Idee
           </h1>
           <p className="text-white text-xl md:text-2xl max-w-2xl leading-relaxed drop-shadow-md">

@@ -16,7 +16,7 @@ export default function SectionTitle({
     "text-center": alignment === "center",
     "text-right": alignment === "right"
   }, className)}>
-      <h2 className="mb-4 text-center">{title}</h2>
+      <h2 className="mb-4 text-center font-bold">{title}</h2>
       {subtitle && <p className="text-lg md:text-xl max-w-3xl mx-auto text-center">{subtitle}</p>}
     </div>;
 }
