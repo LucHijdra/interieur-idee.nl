@@ -9,7 +9,7 @@ export default function Philosophy() {
             <div className="w-20 h-20 mb-6 rounded-full flex items-center justify-center bg-cream">
               <span className="material-icons text-3xl">✓</span>
             </div>
-            <h3 className="text-xl mb-3 text-center">Ontzorging van A tot Z</h3>
+            <h3 className="text-xl mb-3 text-center">Volledige ontzorging van A tot Z</h3>
             <p className="text-sm">
               Wij begeleiden graag het volledige traject, van het eerste schetsontwerp tot en met
               de oplevering. Liever een deeltraject? Ook dat is mogelijk, zoals uitsluitend het
