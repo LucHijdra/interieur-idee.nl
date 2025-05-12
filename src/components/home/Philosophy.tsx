@@ -1,3 +1,5 @@
+import ReviewCard from "../shared/ReviewCard";
+
 export default function Philosophy() {
   return (
     <section className="section bg-white">
@@ -9,7 +11,7 @@ export default function Philosophy() {
             <div className="w-20 h-20 mb-6 rounded-full flex items-center justify-center bg-cream">
               <span className="material-icons text-3xl">✓</span>
             </div>
-            <h3 className="text-xl mb-3 text-center">Volledige ontzorging van A tot Z</h3>
+            <h3 className="text-xl mb-3 text-center">Ontzorging van A tot Z</h3>
             <p className="text-sm">
               Wij begeleiden graag het volledige traject, van het eerste schetsontwerp tot en met
               de oplevering. Liever een deeltraject? Ook dat is mogelijk, zoals uitsluitend het
@@ -79,6 +81,32 @@ export default function Philosophy() {
               Door onze jarenlange ervaring en technische expertise kunt u vertrouwen op een vlot verlopend proces 
               en een eindresultaat dat perfect aansluit bij uw verwachtingen.
             </p>
+          </div>
+        </div>
+
+        {/* Reviews Section */}
+        <div className="mt-24">
+          <h2 className="text-4xl font-serif mb-4 text-center">Wat onze klanten zeggen</h2>
+          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+            Ontdek waarom onze klanten voor Interieur-Idee kiezen en hoe wij hun woondromen hebben gerealiseerd.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            <ReviewCard 
+              text="De samenwerking ging eigenlijk vanzelf. Ik had mijn wensen maar geen idee hoe ik dit moest omzetten in een comfortabel drijvend paleis. Vanaf de 1e tekening zat Guus in de juiste richting. Het resultaat is inderdaad bijzonder verrassend, het is een juweeltje op het water geworden."
+              author="Gerard Wielenga"
+            />
+            <ReviewCard 
+              text="Guusje heeft heel goed inzicht in hoe je ruimtes goed kan indelen. Zelfs bij een gewoon standaard huis, heeft ze er iets bijzonders van gemaakt. Ze is ook praktisch en luistert goed naar wat jij wil. Dus haar eigen smaak, kennis en expertise combineert ze heel goed met de wensen van de klant."
+              author="Nanette"
+            />
+            <ReviewCard 
+              text="Fijn om met kennis en kunde te zijn bijgestaan bij het ontwerp van onze benedenverdieping. Naast voorstellen voor indeling en materialen heeft Interieur-Idee ook veel betekend in de realisatie van de verbouwing."
+              author="familie uit Delft"
+            />
+            <ReviewCard 
+              text="Door Guusje voelt het echt als 'thuiskomen'! Na onze begane grond verbouwing zijn we weer terug gekomen bij Guusje om onze badkamer te verbouwen. Ze werkt snel, netjes en denkt altijd mee aan creatieve ideeën!"
+              author="Andy en Babiche"
+            />
           </div>
         </div>
       </div>
