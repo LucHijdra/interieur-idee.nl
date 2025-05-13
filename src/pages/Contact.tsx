@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import SectionTitle from "@/components/shared/SectionTitle";
 import { MapPin, Phone, Mail } from "lucide-react";
@@ -14,7 +13,7 @@ export default function Contact() {
         <div className="container-custom">
           <SectionTitle
             title="Contact"
-            subtitle="Bent u benieuwd wat Interieur-Idee voor uw project kan betekenen? Neem gerust contact met ons op voor een vrijblijvend kennismakingsgesprek."
+            subtitle="Ben je benieuwd wat Interieur-Idee voor jouw project kan betekenen? Neem gerust contact met ons op voor een vrijblijvend kennismakingsgesprek."
           />
         </div>
       </section>
@@ -25,8 +24,8 @@ export default function Contact() {
             <div>
               <h3 className="mb-6">Contactgegevens</h3>
               <p className="mb-6">
-                Wij denken graag met u mee en zetten samen de eerste
-                stap richting een interieur dat volledig bij u past.
+                Wij denken graag met je mee en zetten samen de eerste
+                stap richting een interieur dat volledig bij je past.
               </p>
               
               <div className="mb-8 flex items-start">

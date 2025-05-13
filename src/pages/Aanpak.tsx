@@ -20,7 +20,7 @@ export default function Aanpak() {
         <div className="container-custom">
           <SectionTitle
             title="Onze aanpak"
-            subtitle="We starten altijd met een vrijblijvend intakegesprek, waarin we uw behoeften, stijl en budget gezamenlijk verkennen."
+            subtitle="We starten altijd met een vrijblijvend intakegesprek, waarin we de behoeften, stijl en budget gezamenlijk verkennen."
           />
         </div>
       </section>
@@ -36,9 +36,9 @@ export default function Aanpak() {
                 verbluffend effect.
               </p>
               <p>
-                Na een grondige inventarisatie van uw wensen starten we met het schetsontwerp.
-                Indien gewenst visualiseren we dit ontwerp in 3D, zodat u direct een realistisch
-                beeld krijgt van het beoogde resultaat.
+                Na een grondige inventarisatie van de wensen starten we met het schetsontwerp.
+                Indien gewenst visualiseren we dit ontwerp in 3D, zodat er direct een realistisch
+                beeld ontstaat van het beoogde resultaat.
               </p>
             </div>
             <div className="flex flex-col">
@@ -63,10 +63,10 @@ export default function Aanpak() {
               </div>
               <h3 className="mb-4 mt-6">Ontwerp</h3>
               <p className="text-sm mb-4">
-                In deze fase vertalen we uw wensen naar een doordacht ontwerp.
+                In deze fase vertalen we de wensen naar een doordacht ontwerp.
               </p>
               <ul className="list-disc pl-5 text-sm space-y-2">
-                <li>Schetsontwerp, de eerste creatieve vertaling van uw ideeën</li>
+                <li>Schetsontwerp, de eerste creatieve vertaling van de ideeën</li>
                 <li>Voorlopig ontwerp, verdere uitwerking inclusief materiaal- en indelingsvoorstellen</li>
                 <li>Definitief ontwerp, een volledig uitgewerkt plan, klaar voor realisatie</li>
               </ul>
@@ -78,7 +78,7 @@ export default function Aanpak() {
               </div>
               <h3 className="mb-4 mt-6">Procedures</h3>
               <p className="text-sm mb-4">
-                We begeleiden u bij alle noodzakelijke stappen richting uitvoering.
+                We begeleiden tijdens alle noodzakelijke stappen richting uitvoering.
               </p>
               <ul className="list-disc pl-5 text-sm space-y-2">
                 <li>Bouwaanvraag, indien nodig verzorgen wij alle benodigde vergunningsaanvragen</li>
