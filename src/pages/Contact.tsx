@@ -13,7 +13,7 @@ export default function Contact() {
         <div className="container-custom">
           <SectionTitle
             title="Contact"
-            subtitle="Ben je benieuwd wat Interieur-Idee voor jouw project kan betekenen? Neem gerust contact met ons op voor een vrijblijvend kennismakingsgesprek."
+            subtitle="Een krachtig interieur begint met een goed gesprek. Interieur‑Idee staat klaar voor een vrijblijvende kennismaking en denkt met zorg en visie mee aan een doordacht ontwerp."
           />
         </div>
       </section>

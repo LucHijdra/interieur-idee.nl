@@ -107,7 +107,11 @@ export default function Aanpak() {
         <div className="container-custom">
           {/* Desktop view - static images */}
           <div className="hidden md:grid md:grid-cols-3 gap-8">
-            {['/lovable-uploads/3.jpg', '/lovable-uploads/9.jpg', '/lovable-uploads/14.jpg'].map((image, index) => (
+            {[
+              '/lovable-uploads/fotoss/_R6_0121 © Barbra Verbij klein.jpg',
+              '/lovable-uploads/fotoss/_R6_0178 © Barbra Verbij klein.jpg',
+              '/lovable-uploads/fotoss/_R6_0181 © Barbra Verbij klein.jpg'
+            ].map((image, index) => (
               <div key={index} className="relative w-full pb-[177.78%]">
                 <div 
                   className="absolute inset-0 bg-cover bg-center" 
@@ -127,7 +131,11 @@ export default function Aanpak() {
               className="w-full"
             >
               <CarouselContent>
-                {['/lovable-uploads/3.jpg', '/lovable-uploads/9.jpg', '/lovable-uploads/14.jpg'].map((image, index) => (
+                {[
+                  '/lovable-uploads/fotoss/_R6_0121 © Barbra Verbij klein.jpg',
+                  '/lovable-uploads/fotoss/_R6_0178 © Barbra Verbij klein.jpg',
+                  '/lovable-uploads/fotoss/_R6_0181 © Barbra Verbij klein.jpg'
+                ].map((image, index) => (
                   <CarouselItem key={index}>
                     <div className="relative w-full pb-[177.78%]">
                       <div 

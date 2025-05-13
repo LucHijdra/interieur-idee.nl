@@ -10,17 +10,17 @@ export default function ImageQuote({ className }: ImageQuoteProps) {
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <img
-            src="/public/lovable-uploads/Afbeelding3.png"
+            src="/lovable-uploads/fotoss/_R6_0162 © Barbra Verbij klein.jpg"
             alt="Interieur hal met witte muren"
             className="w-full h-[400px] object-cover"
           />
           <img
-            src="/public/lovable-uploads/Afbeelding4.png"
+            src="/lovable-uploads/fotoss/_R6_0109 © Barbra Verbij klein.jpg"
             alt="Trap met fotolijsten"
             className="w-full h-[400px] object-cover"
           />
           <img
-            src="/public/lovable-uploads/Afbeelding5.png"
+            src="/lovable-uploads/fotoss/_R6_0121 © Barbra Verbij klein.jpg"
             alt="Moderne keuken"
             className="w-full h-[400px] object-cover"
           />
