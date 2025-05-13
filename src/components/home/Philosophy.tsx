@@ -25,7 +25,7 @@ export default function Philosophy() {
             </div>
             <h3 className="text-xl mb-3 text-center">Persoonlijk en helder contact</h3>
             <p className="text-sm">
-              Tijdens het hele proces heeft u één vast
+              Tijdens het hele proces is er één vast
               aanspreekpunt. Iemand die niet alleen de planning en
               coördinatie bewaakt, maar ook helder en proactief met
               u communiceert.
@@ -39,8 +39,8 @@ export default function Philosophy() {
             <h3 className="text-xl mb-3 text-center">Onafhankelijk en transparant</h3>
             <p className="text-sm">
               Wij kiezen leveranciers op basis van kwaliteit en prijs.
-              Dankzij onze werkwijze met open begrotingen heeft u
-              altijd volledig inzicht in de kosten, zonder verrassingen
+              Dankzij onze werkwijze met open begrotingen is er altijd
+              volledig inzicht in de kosten, zonder verrassingen
               achteraf.
             </p>
           </div>
@@ -60,26 +60,20 @@ export default function Philosophy() {
 
         {/* Kopersbegeleiding Section */}
         <div className="mt-24 flex flex-col md:flex-row items-center gap-12 bg-[#dedbd2] p-12 rounded-lg">
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2 flex justify-center">
             <img
               src="/public/lovable-uploads/Afbeelding6.png"
               alt="Kopersbegeleiding"
-              className="w-full h-auto rounded-lg shadow-lg"
+              className="w-[90%] h-auto rounded-lg shadow-lg"
             />
           </div>
           <div className="w-full md:w-1/2">
-            <h2 className="text-3xl mb-6">Kopersbegeleiding</h2>
+            <h2 className="text-3xl mb-6 text-left">Kopersbegeleiding</h2>
             <p className="text-lg mb-4">
-              Als ervaren kopersbegeleider staan wij klaar om u te ondersteunen bij elke stap van uw nieuwbouwproject. 
-              Van het maken van de juiste keuzes voor uw woning tot het coördineren van het hele bouwproces.
-            </p>
-            <p className="text-lg mb-4">
-              Wij zorgen ervoor dat al uw wensen op de juiste manier worden vertaald naar een praktische en 
-              esthetische uitvoering, waarbij we rekening houden met zowel technische aspecten als uw persoonlijke voorkeuren.
+              Heb je een nieuwbouwwoning gekocht? Wij kunnen je helpen bij alle keuzemomenten: van een iets aangepaste indeling, lichtpunten elektraplan, tot keuken, sanitair, afwerkingen, maatwerkoplossingen, enz.
             </p>
             <p className="text-lg">
-              Door onze jarenlange ervaring en technische expertise kunt u vertrouwen op een vlot verlopend proces 
-              en een eindresultaat dat perfect aansluit bij uw verwachtingen.
+              Met onze begeleiding worden dure aanpassingen achteraf voorkomen én krijg je een interieur dat écht bij je past en zal het uiteindelijk beter aansluiten bij de wensen.
             </p>
           </div>
         </div>
