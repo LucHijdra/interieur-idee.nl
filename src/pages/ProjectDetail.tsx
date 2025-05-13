@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import SectionTitle from "@/components/shared/SectionTitle";
@@ -33,16 +32,14 @@ const projectData = {
       {
         url: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=1974&auto=format&fit=crop",
         caption: "Badkamer met vrijstaand bad"
-      }
-    ],
-    floorplans: [
-      {
-        title: "Vóór renovatie",
-        image: "https://images.unsplash.com/photo-1574691250077-03a929faece5?q=80&w=2069&auto=format&fit=crop"
       },
       {
-        title: "Na renovatie",
-        image: "https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=2070&auto=format&fit=crop"
+        url: "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?q=80&w=2074&auto=format&fit=crop",
+        caption: "Eethoek met natuurlijk licht"
+      },
+      {
+        url: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop",
+        caption: "Studeerkamer met inbouwkasten"
       }
     ],
     testimonial: {
@@ -68,7 +65,7 @@ export default function ProjectDetail() {
     return (
       <main className="pt-32 pb-16">
         <div className="container-custom">
-          <h2 className="luxury-title text-center">Project niet gevonden</h2>
+          <h2 className="text-3xl font-serif text-left">Project niet gevonden</h2>
         </div>
       </main>
     );
@@ -83,8 +80,8 @@ export default function ProjectDetail() {
       >
         <div className="absolute inset-0 bg-black bg-opacity-30 flex items-end">
           <div className="container-custom pb-12 md:pb-16 lg:pb-20">
-            <h1 className="luxury-title text-white mb-4">{project.title}</h1>
-            <p className="luxury-subtitle text-white opacity-90">{project.subtitle}</p>
+            <h1 className="text-4xl font-serif text-white mb-4 text-left">{project.title}</h1>
+            <p className="text-xl text-white opacity-90 text-left">{project.subtitle}</p>
           </div>
         </div>
       </div>
@@ -94,20 +91,20 @@ export default function ProjectDetail() {
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="md:col-span-2">
-              <h2 className="luxury-title mb-6">Over dit project</h2>
+              <h2 className="text-3xl font-serif mb-6 text-left">Over dit project</h2>
               <p className="mb-6">{project.description}</p>
               <div className="mb-8">
-                <h3 className="font-serif text-2xl mb-4">De uitdaging</h3>
+                <h3 className="text-2xl font-serif mb-4 text-left">De uitdaging</h3>
                 <p>{project.challenge}</p>
               </div>
               <div>
-                <h3 className="font-serif text-2xl mb-4">Onze oplossing</h3>
+                <h3 className="text-2xl font-serif mb-4 text-left">Onze oplossing</h3>
                 <p>{project.solution}</p>
               </div>
             </div>
             
             <div className="bg-white p-6 shadow-md self-start">
-              <h3 className="font-serif text-xl mb-4">Projectdetails</h3>
+              <h3 className="text-2xl font-serif mb-4 text-left">Projectdetails</h3>
               <div className="space-y-4">
                 <div>
                   <p className="text-sm text-gray-500">Locatie</p>
@@ -135,46 +132,20 @@ export default function ProjectDetail() {
         </div>
       </section>
       
-      {/* Before/After Floorplans */}
-      <section className="section bg-offwhite">
-        <div className="container-custom">
-          <SectionTitle 
-            title="Voor & Na"
-            subtitle="Bekijk hoe we de ruimte hebben getransformeerd"
-            alignment="center"
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-            {project.floorplans.map((plan, index) => (
-              <div key={index} className="bg-white p-4 shadow-md">
-                <h4 className="font-serif text-xl mb-3">{plan.title}</h4>
-                <div 
-                  className="h-64 md:h-80 bg-cover bg-center"
-                  style={{ backgroundImage: `url(${plan.image})` }}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      
       {/* Project Gallery */}
       <section className="section bg-cream">
         <div className="container-custom">
-          <SectionTitle 
-            title="Impressie"
-            subtitle="Een visuele tour door het project"
-            alignment="center"
-          />
+          <h2 className="text-3xl font-serif mb-8 text-left">Impressie</h2>
+          <p className="text-gray-600 mb-8 text-left">Een visuele tour door het project</p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             {project.images.map((image, index) => (
               <div key={index} className="overflow-hidden shadow-md">
                 <div 
                   className="project-gallery-item transition-transform duration-700 hover:scale-105"
                   style={{ backgroundImage: `url(${image.url})` }}
                 />
-                <p className="bg-white p-3 text-sm text-center">{image.caption}</p>
+                <p className="bg-white p-3 text-sm text-left">{image.caption}</p>
               </div>
             ))}
           </div>
