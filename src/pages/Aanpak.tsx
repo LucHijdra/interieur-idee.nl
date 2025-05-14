@@ -162,7 +162,7 @@ export default function Aanpak() {
       </section>
 
       <Quote 
-        text="Juist de combinatie tussen oude, bestaande en nieuwe materialen maakt een ruimte spannend en meer eigen."
+        text="In het gehele interieur keren materialen en kleurtinten op subtiele wijze terug, wat zorgt voor samenhang en een harmonieuze sfeer."
         author="Guusje Bosman"
         className="bg-cream"
       />
