@@ -42,8 +42,7 @@ export default function Aanpak() {
               </p>
             </div>
             <div className="flex flex-col">
-              <div className="h-[500px] bg-contain bg-center bg-no-repeat" style={{ backgroundImage: "url('/lovable-uploads/Afbeelding9 - Bewerkt.png')" }}></div>
-              <p className="mt-4 text-center text-sm">Plattegrond bestaande situatie & Plattegrond gewijzigde situatie</p>
+              <div className="h-[500px] bg-contain bg-center bg-no-repeat" style={{ backgroundImage: "url('/lovable-uploads/Interieur-Idee draagt creatieve en vaak kostenbesparende oplossingen aan door de contacten die door de jaren heen verworven zijn..png')" }}></div>
             </div>
           </div>
         </div>
@@ -108,7 +107,7 @@ export default function Aanpak() {
           {/* Desktop view - static images */}
           <div className="hidden md:grid md:grid-cols-3 gap-8">
             {[
-              '/lovable-uploads/fotoss/_R6_0121 © Barbra Verbij klein.jpg',
+              '/lovable-uploads/DSC_7332.JPG',
               '/lovable-uploads/fotoss/_R6_0178 © Barbra Verbij klein.jpg',
               '/lovable-uploads/fotoss/_R6_0181 © Barbra Verbij klein.jpg'
             ].map((image, index) => (
@@ -117,6 +116,11 @@ export default function Aanpak() {
                   className="absolute inset-0 bg-cover bg-center" 
                   style={{ backgroundImage: `url('${image}')` }}
                 ></div>
+                {index === 2 && (
+                  <p className="absolute bottom-2 right-2 text-white text-sm italic font-sans">
+                    fotografie: Barbra Verbij
+                  </p>
+                )}
               </div>
             ))}
           </div>
@@ -132,7 +136,7 @@ export default function Aanpak() {
             >
               <CarouselContent>
                 {[
-                  '/lovable-uploads/fotoss/_R6_0121 © Barbra Verbij klein.jpg',
+                  '/lovable-uploads/DSC_7332.JPG',
                   '/lovable-uploads/fotoss/_R6_0178 © Barbra Verbij klein.jpg',
                   '/lovable-uploads/fotoss/_R6_0181 © Barbra Verbij klein.jpg'
                 ].map((image, index) => (
