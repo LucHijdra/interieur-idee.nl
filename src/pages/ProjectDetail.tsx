@@ -34,7 +34,7 @@ const projectData = {
   "brandweerkazerne": {
     title: "Projectinrichting en kleuradvies brandweerkazerne",
     subtitle: "Een tweede thuis voor drie brandweerteams",
-    coverImage: "/lovable-uploads/fotoss/brandweer header.jpg",
+    coverImage: "/brandweerkazernefotos/20250513_132149.jpg",
     description: `Voor de nieuwe kazerne was nog geen kleur- en materiaalplan opgesteld voor het vaste en losse meubilair, evenals de stoffering. De opdracht richtte zich op de inrichting van diverse ruimten, waaronder de entree, zitkamer, woonkeuken, slaapkamers, kantoren en leslokalen.`,
     challenge: `Binnen de kazerne werken drie teams in ploegendienst. Omdat de kazerne fungeert als hun tweede thuis, was het essentieel dat alle teams zich prettig voelen in de ruimtes ondanks uiteenlopende voorkeuren. Met name het zitcomfort en de robuustheid van de relaxstoelen in de zitkamer waren cruciaal. Daaruit moest men snel kunnen opstaan bij een noodoproep.`,
     solution: `Door vanaf de start alle teams actief te betrekken bij het ontwerpproces, ontstond er draagvlak voor een gezamenlijke visie. De gekozen kleuren en materialen sloten aan op het bestaande architectonisch ontwerp, zodat een harmonieus geheel ontstond. Na het testen van diverse modellen, kozen de teams unaniem voor een relaxstoel met vier poten en een los voetenbankje, uitgevoerd in vier kleuren kunstleer. Daarnaast kregen persoonlijke elementen een plek in het ontwerp. Ingezonden foto’s van medewerkers werden verwerkt tot fotobehang op meerdere locaties in het gebouw.`,
@@ -74,7 +74,7 @@ export default function ProjectDetail() {
       <section
         className="relative h-[500px] bg-cover bg-center"
         style={{
-          backgroundImage: `url(${id === "woonark" ? "/woonarkfotos/woonarkheader.jpg" : project.coverImage})`,
+          backgroundImage: `url(${id === "zondagsschool" ? "/Zondagschoolfotos/mastenstraatheader.jpg" : project.coverImage})`,
         }}
       >
         <div className="absolute inset-0 bg-black opacity-30"></div>

@@ -7,19 +7,19 @@ const projects = [
     id: "zondagsschool",
     title: "Woning in voormalige zondagsschool",
     category: "Residentieel",
-    imageUrl: "/lovable-uploads/fotoss/mastenstraat header.jpg",
+    imageUrl: "/Zondagschoolfotos/mastenstraatheader.jpg",
   },
   {
     id: "woonark",
     title: "Woonark in het Spaarne",
     category: "Residentieel",
-    imageUrl: "/lovable-uploads/fotoss/woonark header.jpg",
+    imageUrl: "/woonarkfotos/woonarkheader.jpg",
   },
   {
     id: "brandweerkazerne",
     title: "Projectinrichting en kleuradvies brandweerkazerne",
     category: "Zakelijk",
-    imageUrl: "/lovable-uploads/fotoss/brandweer header.jpg",
+    imageUrl: "/brandweerkazernefotos/20250513_132149.jpg",
   },
 ];
 
