@@ -6,6 +6,9 @@ export default function Hero() {
       backgroundPosition: "center center"
     }}>
         <div className="absolute inset-0 bg-black opacity-10"></div>
+        <div className="absolute bottom-0 right-0 m-4 text-white text-sm italic font-sans">
+          fotografie: Barbra Verbij
+        </div>
       </div>
       
       <div className="container-custom relative z-10 mt-20 md:mt-0">

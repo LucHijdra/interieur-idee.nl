@@ -59,7 +59,7 @@ export default function Philosophy() {
         </div>
 
         {/* Kopersbegeleiding Section */}
-        <div className="mt-24 flex flex-col md:flex-row items-center gap-12 bg-[#dedbd2] p-12 rounded-lg">
+        <div className="mt-24 flex flex-col md:flex-row items-center gap-12 bg-[#f4f4f0] p-12 rounded-lg">
           <div className="w-full md:w-1/2 flex justify-center">
             <img
               src="/public/lovable-uploads/Afbeelding6.png"
@@ -68,7 +68,7 @@ export default function Philosophy() {
             />
           </div>
           <div className="w-full md:w-1/2">
-            <h2 className="text-3xl mb-6 text-left">Kopersbegeleiding</h2>
+            <h3 className="text-xl mb-6 text-left">Kopersbegeleiding</h3>
             <p className="text-lg mb-4">
               Heb je een nieuwbouwwoning gekocht? Wij kunnen je helpen bij alle keuzemomenten: van een iets aangepaste indeling, lichtpunten elektraplan, tot keuken, sanitair, afwerkingen, maatwerkoplossingen, enz.
             </p>
@@ -80,7 +80,7 @@ export default function Philosophy() {
 
         {/* Reviews Section */}
         <div className="mt-24">
-          <h2 className="text-4xl font-serif mb-4 text-center">Wat onze klanten zeggen</h2>
+          <h2 className="text-4xl font-serif mb-4 text-center">Wat onze opdrachtgevers zeggen</h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
             Ontdek waarom onze klanten voor Interieur-Idee kiezen en hoe wij hun woondromen hebben gerealiseerd.
           </p>

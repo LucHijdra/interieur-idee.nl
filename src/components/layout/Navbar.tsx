@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu } from 'lucide-react';
@@ -20,7 +19,7 @@ export default function Navbar() {
   }, [location.pathname]);
 
   return (
-    <nav className="bg-cream py-5 relative z-10">
+    <nav className="bg-[#dcd9d0] py-5 relative z-10">
       <div className="container-custom flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <img 
@@ -58,7 +57,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed top-[69px] left-0 right-0 bg-cream shadow-md animate-fade-in z-50">
+        <div className="lg:hidden fixed top-[69px] left-0 right-0 bg-[#dcd9d0] shadow-md animate-fade-in z-50">
           <div className="container-custom py-4 flex flex-col">
             {navLinks.map((link) => (
               <Link

@@ -16,24 +16,24 @@ export default function About() {
               </p>
               <p>
                 Wij creëren ruimtes die verrassen, verbinden en
-                toekomstbestendig zijn.
+                toekomstbestendig zijn. Interieur-Idee draagt
+                creatieve en vaak kostenbesparende oplossingen aan
+                door de contacten die door de jaren heen verworven
+                zijn.
               </p>
-              <div className="space-y-4">
-                <p className="font-medium">Guusje Bosman</p>
-                <p className="text-sm">
-                  Guusje Bosman is de interieurarchitect bij
-                  Interieur-Idee. Zij is sinds 1990 een
-                  gediplomeerd interieurarchitect en staat
-                  geregistreerd in het landelijk register voor
-                  interieurarchitecten.
-                </p>
-                <Link 
-                  to="/contact" 
-                  className="inline-block px-6 py-2 border border-taupe text-charcoal hover:bg-taupe hover:text-white transition-colors"
-                >
-                  Contact
-                </Link>
-              </div>
+              <p>
+                Guusje Bosman is de interieurarchitect bij
+                Interieur-Idee. Zij is sinds 1990 een
+                gediplomeerd interieurarchitect en staat
+                geregistreerd in het landelijk register voor
+                interieurarchitecten.
+              </p>
+              <Link 
+                to="/contact" 
+                className="inline-block px-6 py-2 border border-taupe text-charcoal hover:bg-taupe hover:text-white transition-colors"
+              >
+                Contact
+              </Link>
             </div>
           </div>
           <div className="flex justify-center items-center">

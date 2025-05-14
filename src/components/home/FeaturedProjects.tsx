@@ -28,7 +28,7 @@ export default function FeaturedProjects() {
     <section className="section bg-offwhite">
       <div className="container-custom">
         <SectionTitle 
-          title="Recente projecten"
+          title="Projecten"
           subtitle="Ontdek een selectie van onze meest recente projecten en laat u inspireren door onze aanpak."
         />
         
