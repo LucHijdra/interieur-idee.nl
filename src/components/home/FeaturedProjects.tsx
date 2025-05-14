@@ -1,26 +1,25 @@
-
 import SectionTitle from "../shared/SectionTitle";
 import ProjectCard from "../shared/ProjectCard";
 import { Link } from "react-router-dom";
 
 const projects = [
   {
-    id: "modern-woonhuis",
-    title: "Modern Woonhuis",
+    id: "zondagsschool",
+    title: "Woning in voormalige zondagsschool",
     category: "Residentieel",
-    imageUrl: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2858&auto=format&fit=crop",
+    imageUrl: undefined,
   },
   {
-    id: "boutique-hotel",
-    title: "Boutique Hotel",
-    category: "Hospitality",
-    imageUrl: "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?q=80&w=2071&auto=format&fit=crop",
+    id: "woonark",
+    title: "Woonark in het Spaarne",
+    category: "Residentieel",
+    imageUrl: undefined,
   },
   {
-    id: "kantoor-renovatie",
-    title: "Kantoor Renovatie",
-    category: "Commercieel",
-    imageUrl: "https://images.unsplash.com/photo-1497215842964-222b430dc094?q=80&w=2070&auto=format&fit=crop",
+    id: "brandweerkazerne",
+    title: "Projectinrichting en kleuradvies brandweerkazerne",
+    category: "Zakelijk",
+    imageUrl: undefined,
   },
 ];
 

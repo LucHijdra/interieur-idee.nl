@@ -3,48 +3,42 @@ import { useParams } from "react-router-dom";
 import SectionTitle from "@/components/shared/SectionTitle";
 import { useIsMobile } from "@/hooks/use-mobile";
 
-// Sample project data - in a real app this would come from an API or database
+// Project data
 const projectData = {
-  "modern-woonhuis": {
-    title: "Modern Woonhuis",
-    subtitle: "Transformatie van een traditionele woning naar een modern en licht familiehuis",
-    location: "Delft",
-    year: "2023",
-    category: "Residentieel",
-    description: "Deze ruime eengezinswoning uit de jaren '70 is volledig getransformeerd naar een licht en modern familiehuis. Door het optimaliseren van de indeling en het verwijderen van niet-dragende muren is een open leefruimte gecreëerd die perfect aansluit bij de wensen van de bewoners.",
-    challenge: "De bestaande indeling was gedateerd met kleine, afgesloten ruimtes die weinig daglicht binnenliet. De uitdaging was om een open, lichte leefomgeving te creëren zonder de structurele integriteit van het huis aan te tasten.",
-    solution: "We hebben niet-dragende muren verwijderd om een open concept te creëren en grotere raampartijen geïnstalleerd om meer natuurlijk licht binnen te laten. Een nieuwe keuken werd strategisch geplaatst als centraal punt voor het gezinsleven, met directe toegang tot de woonkamer en eetkamer.",
-    materials: ["Eikenhouten vloeren", "Marmeren werkbladen", "Stalen kozijnen", "Messing accenten"],
-    coverImage: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2858&auto=format&fit=crop",
-    images: [
-      {
-        url: "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?q=80&w=2074&auto=format&fit=crop",
-        caption: "Lichte, open woonkamer met zicht op de tuin"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop",
-        caption: "Moderne keuken met kookeiland"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1593696140826-c58b021acf8b?q=80&w=2070&auto=format&fit=crop",
-        caption: "Minimalistische slaapkamer met inloopkast"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=1974&auto=format&fit=crop",
-        caption: "Badkamer met vrijstaand bad"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?q=80&w=2074&auto=format&fit=crop",
-        caption: "Eethoek met natuurlijk licht"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop",
-        caption: "Studeerkamer met inbouwkasten"
-      }
-    ],
-    testimonial: {
-      quote: "Guusje heeft onze woning volledig getransformeerd. Haar visie voor een open en lichte leefruimte heeft ons huis een compleet nieuwe energie gegeven. We zijn vooral onder de indruk van haar oog voor detail en hoe ze functionaliteit combineert met stijl.",
-      author: "Familie Jansen"
+  "zondagsschool": {
+    title: "Woning in voormalige zondagsschool",
+    subtitle: "Transformatie van een historisch pand naar een eigentijdse woning",
+    description: `Een voormalige zondagsschool uit 1952 is getransformeerd tot een comfortabele woning. Oorspronkelijk bestond het pand uit kantoor- en vergaderruimtes op de begane grond en een grote open ruimte op de verdieping, bereikbaar via binnen- en buitentrap. Het pand is met respect voor de oorspronkelijke structuur herbestemd tot een comfortabele en eigentijdse woning.`,
+    challenge: `Het pand had een gesloten zijgevel, een ongelukkig geplaatste trap in een hoek en geen entree aan de straatzijde. Daarnaast ontbrak isolatie in vloer, dak en ramen en bestond de tuin volledig uit stoeptegels.`,
+    solution: `Er zijn extra ramen in de zijgevel en dak geplaatst en de trap is centraal in de woning gebracht, wat een open indeling boven mogelijk maakte. De overloop fungeert nu als tweede zitkamer. Het verlaagde plafond is verwijderd en het dak is van buitenaf geïsoleerd, waardoor het originele dakbeschot zichtbaar is gebleven. Alle ramen en vloeren zijn vernieuwd en geïsoleerd. Op de begane grond is een nieuwe entree aan de straatzijde gerealiseerd, wat het pand een duidelijker aanzicht geeft. Tot slot zijn de stoeptegels in de tuin deels vervangen door gras, en zijn er tussenliggend klinkertjes geplaatst.`,
+    details: {
+      locatie: "Delft, centrum",
+      jaar: "2013",
+      oppervlak: "200 m2"
+    }
+  },
+  "woonark": {
+    title: "Woonark in het Spaarne",
+    subtitle: "Een licht en flexibel ontwerp met verspringende niveaus",
+    description: `Voor deze nieuwe woonark ontwierpen we een licht en open alternatief ter vervanging van een oudere ark met vaste maximale afmetingen. Het nieuwe ontwerp speelt in op de wens voor een licht, ruimtelijk en flexibel geheel.`,
+    challenge: `Hoewel de ark bedoeld is voor één persoon, bleek een anderhalf-laagse opzet financieel gunstiger. De wens was een ruimtelijk, loftachtig gevoel en geen gang met kleine kamers. Functionele eisen waren o.a. een entree op kadeniveau, een terras maximaal 40 cm boven het water en een directe verbinding tussen eetkamer en terras.`,
+    solution: `Door verschillende niveaus te laten verspringen met telkens 40 cm, ontstonden logische overgangen. De entree en slaapkamer op kadeniveau, keuken en terras iets lager, de zitkamer op waterniveau. Beneden wordt twee derde van de ruimte benut als woonverdieping, de rest als berging. Beneden zijn de ramen in de slaapkamers boven het betonnen casco geplaatst, wat resulteert in verhoogde kozijnen met daglichttoetreding van bovenaf. De uitspringende koven die hierdoor boven ontstaan, worden daar als zitbanken gebruikt. De indeling is flexibel, twee slaapkamers zijn eenvoudig samen te voegen tot één royale ruimte.`,
+    details: {
+      locatie: "Haarlem, Spaarne",
+      jaar: "2021",
+      oppervlak: "150 m2"
+    }
+  },
+  "brandweerkazerne": {
+    title: "Projectinrichting en kleuradvies brandweerkazerne",
+    subtitle: "Een tweede thuis voor drie brandweerteams",
+    description: `Voor de nieuwe kazerne was nog geen kleur- en materiaalplan opgesteld voor het vaste en losse meubilair, evenals de stoffering. De opdracht richtte zich op de inrichting van diverse ruimten, waaronder de entree, zitkamer, woonkeuken, slaapkamers, kantoren en leslokalen.`,
+    challenge: `Binnen de kazerne werken drie teams in ploegendienst. Omdat de kazerne fungeert als hun tweede thuis, was het essentieel dat alle teams zich prettig voelen in de ruimtes ondanks uiteenlopende voorkeuren. Met name het zitcomfort en de robuustheid van de relaxstoelen in de zitkamer waren cruciaal. Daaruit moest men snel kunnen opstaan bij een noodoproep.`,
+    solution: `Door vanaf de start alle teams actief te betrekken bij het ontwerpproces, ontstond er draagvlak voor een gezamenlijke visie. De gekozen kleuren en materialen sloten aan op het bestaande architectonisch ontwerp, zodat een harmonieus geheel ontstond. Na het testen van diverse modellen, kozen de teams unaniem voor een relaxstoel met vier poten en een los voetenbankje, uitgevoerd in vier kleuren kunstleer. Daarnaast kregen persoonlijke elementen een plek in het ontwerp. Ingezonden foto’s van medewerkers werden verwerkt tot fotobehang op meerdere locaties in het gebouw.`,
+    details: {
+      locatie: "Rotterdam, RTHA",
+      jaar: "2020",
+      oppervlak: null
     }
   }
 };
@@ -74,15 +68,10 @@ export default function ProjectDetail() {
   return (
     <>
       {/* Hero Section */}
-      <div 
-        className="project-hero"
-        style={{ backgroundImage: `url(${project.coverImage})` }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-30 flex items-end">
-          <div className="container-custom pb-12 md:pb-16 lg:pb-20">
-            <h1 className="text-4xl font-serif text-white mb-4 text-left">{project.title}</h1>
-            <p className="text-xl text-white opacity-90 text-left">{project.subtitle}</p>
-          </div>
+      <div className="pt-32 pb-12 bg-cream">
+        <div className="container-custom">
+          <h1 className="text-4xl font-serif mb-4 text-left">{project.title}</h1>
+          <p className="text-xl opacity-90 text-left">{project.subtitle}</p>
         </div>
       </div>
       
@@ -108,47 +97,29 @@ export default function ProjectDetail() {
               <div className="space-y-4">
                 <div>
                   <p className="text-sm text-gray-500">Locatie</p>
-                  <p>{project.location}</p>
+                  <p>{project.details.locatie}</p>
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">Jaar</p>
-                  <p>{project.year}</p>
+                  <p>{project.details.jaar}</p>
                 </div>
-                <div>
-                  <p className="text-sm text-gray-500">Categorie</p>
-                  <p>{project.category}</p>
-                </div>
-                <div>
-                  <p className="text-sm text-gray-500">Materialen</p>
-                  <ul className="list-disc list-inside">
-                    {project.materials.map((material, index) => (
-                      <li key={index}>{material}</li>
-                    ))}
-                  </ul>
-                </div>
+                {project.details.oppervlak && (
+                  <div>
+                    <p className="text-sm text-gray-500">Oppervlak</p>
+                    <p>{project.details.oppervlak}</p>
+                  </div>
+                )}
               </div>
             </div>
           </div>
         </div>
       </section>
       
-      {/* Project Gallery */}
+      {/* Impressie (placeholder) */}
       <section className="section bg-cream">
         <div className="container-custom">
           <h2 className="text-3xl font-serif mb-8 text-left">Impressie</h2>
-          <p className="text-gray-600 mb-8 text-left">Een visuele tour door het project</p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-            {project.images.map((image, index) => (
-              <div key={index} className="overflow-hidden shadow-md">
-                <div 
-                  className="project-gallery-item transition-transform duration-700 hover:scale-105"
-                  style={{ backgroundImage: `url(${image.url})` }}
-                />
-                <p className="bg-white p-3 text-sm text-left">{image.caption}</p>
-              </div>
-            ))}
-          </div>
+          <p className="text-gray-600 mb-8 text-left">Beeldmateriaal volgt binnenkort.</p>
         </div>
       </section>
       
