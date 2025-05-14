@@ -71,17 +71,18 @@ export default function ProjectDetail() {
   return (
     <>
       {/* Hero Section */}
-      <div 
-        className="h-[70vh] w-full bg-cover bg-center relative"
-        style={{ backgroundImage: `url(${project.coverImage})` }}
+      <section
+        className="relative h-[500px] bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${id === "woonark" ? "/woonarkfotos/woonarkheader.jpg" : project.coverImage})`,
+        }}
       >
-        <div className="absolute inset-0 bg-black/40 flex items-end">
-          <div className="container-custom pb-16">
-            <h1 className="text-4xl font-serif mb-4 text-white text-left">{project.title}</h1>
-            <p className="text-xl text-white/90">{project.subtitle}</p>
-          </div>
+        <div className="absolute inset-0 bg-black opacity-30"></div>
+        <div className="container-custom relative z-10 h-full flex flex-col justify-end pb-8 text-left">
+          <h1 className="text-white text-4xl font-serif mb-2 text-left">{project.title}</h1>
+          <p className="text-white text-lg text-left">{project.subtitle}</p>
         </div>
-      </div>
+      </section>
       
       {/* Project Info */}
       <section className="section bg-cream">
@@ -123,11 +124,43 @@ export default function ProjectDetail() {
         </div>
       </section>
       
-      {/* Impressie (placeholder) */}
+      {/* Impressie */}
       <section className="section bg-cream">
         <div className="container-custom">
           <h2 className="text-3xl font-serif mb-8 text-left">Impressie</h2>
-          <p className="text-gray-600 mb-8 text-left">Beeldmateriaal volgt binnenkort.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {id === "zondagsschool" && [
+              "/Zondagschoolfotos/vd Mastenstraat na uit ppt.jpg",
+              "/Zondagschoolfotos/vd Mastenstraat vóór (11).jpg",
+              "/Zondagschoolfotos/vd Mastenstraat zijgevel na  (1).jpg",
+              "/Zondagschoolfotos/vd Mastenstraat vóór (18).jpg",
+              "/Zondagschoolfotos/vd Mastenstraat vóór (22).jpg",
+              "/Zondagschoolfotos/vd Mastenstraat vóór (9).jpg",
+              "/Zondagschoolfotos/vd Mastenstraat voor.jpg",
+              "/Zondagschoolfotos/voor foto groot eetkamer.JPG",
+            ].map((image, index) => (
+              <img key={index} src={image} alt="Impressie Zondagsschool" className="w-full h-auto rounded-lg shadow-md" />
+            ))}
+            {id === "woonark" && [
+              "/woonarkfotos/WATERZIJDE.JPG",
+              "/woonarkfotos/WALZIJDE.JPG",
+              "/woonarkfotos/ZIJGEVELS.JPG",
+              "/woonarkfotos/1e schetsen.JPG",
+              "/woonarkfotos/Dia1.JPG",
+              "/woonarkfotos/IMG-20211111-WA0030.jpg",
+              "/woonarkfotos/IMG-20211111-WA0031.jpg",
+              "/woonarkfotos/maps voorgevel.jpg",
+            ].map((image, index) => (
+              <img key={index} src={image} alt="Impressie Woonark" className="w-full h-auto rounded-lg shadow-md" />
+            ))}
+            {id === "brandweerkazerne" && [
+              "/brandweerkazernefotos/20250513_132149.jpg",
+              "/brandweerkazernefotos/IMG-20200730-WA0003.jpg",
+              "/brandweerkazernefotos/20200730_105546.jpg",
+            ].map((image, index) => (
+              <img key={index} src={image} alt="Impressie Brandweerkazerne" className="w-full h-auto rounded-lg shadow-md" />
+            ))}
+          </div>
         </div>
       </section>
       
