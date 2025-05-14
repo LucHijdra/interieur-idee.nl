@@ -29,7 +29,7 @@ export default function FeaturedProjects() {
       <div className="container-custom">
         <SectionTitle 
           title="Projecten"
-          subtitle="Ontdek een selectie van onze meest recente projecten en laat u inspireren door onze aanpak."
+          subtitle="Ontdek een selectie van onze projecten en laat u inspireren door onze aanpak."
         />
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

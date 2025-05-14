@@ -5,7 +5,7 @@ export default function About() {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col justify-center">
-            <h2 className="mb-6 text-left">Over Interieur-Idee</h2>
+            <h3 className="text-xl mb-6 text-left">Over Interieur-Idee</h3>
             <div className="space-y-6">
               <p>
                 Met een scherp oog voor esthetiek en
