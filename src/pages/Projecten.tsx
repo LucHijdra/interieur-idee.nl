@@ -6,13 +6,13 @@ const projects = [
   {
     id: "zondagsschool",
     title: "Woning in voormalige zondagsschool",
-    category: "Residentieel",
+    category: "Herbestemming",
     imageUrl: "/Zondagschoolfotos/mastenstraatheader.jpg",
   },
   {
     id: "woonark",
     title: "Woonark in het Spaarne",
-    category: "Residentieel",
+    category: "Ontwerp",
     imageUrl: "/woonarkfotos/woonarkheader.jpg",
   },
   {
@@ -20,6 +20,12 @@ const projects = [
     title: "Projectinrichting en kleuradvies brandweerkazerne",
     category: "Zakelijk",
     imageUrl: "/brandweerkazernefotos/20250513_132149.jpg",
+  },
+  {
+    id: "vakantiehuisMaas",
+    title: "Vakantiehuis aan de Maas",
+    category: "Herindeling",
+    imageUrl: "/vakantiehuisMaas/20240827_130503.jpg",
   },
 ];
 

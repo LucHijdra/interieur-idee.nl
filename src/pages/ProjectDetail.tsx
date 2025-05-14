@@ -16,7 +16,20 @@ const projectData = {
       locatie: "Delft, centrum",
       jaar: "2013",
       oppervlak: "200 m2"
-    }
+    },
+    impressies: [
+      "/Zondagschoolfotos/voor foto groot eetkamer.JPG",
+      "/Zondagschoolfotos/vd Mastenstraat zijgevel na  (1).jpg",
+      "/Zondagschoolfotos/vd Mastenstraat voor.jpg",
+      "/Zondagschoolfotos/vd Mastenstraat vóór (22).jpg",
+      "/Zondagschoolfotos/vd Mastenstraat vóór (18).jpg",
+      "/Zondagschoolfotos/vd Mastenstraat vóór (11).jpg",
+      "/Zondagschoolfotos/vd Mastenstraat vóór (9).jpg",
+      "/Zondagschoolfotos/vd Mastenstraat na  (1).jpg",
+      "/Zondagschoolfotos/mastenstraatheader.jpg",
+      "/Zondagschoolfotos/DSC_7332.JPG",
+      "/Zondagschoolfotos/vd Mastensraat na .jpg"
+    ]
   },
   "woonark": {
     title: "Woonark in het Spaarne",
@@ -43,7 +56,32 @@ const projectData = {
       jaar: "2020",
       oppervlak: null
     }
-  }
+  },
+  "vakantiehuisMaas": {
+    title: "Vakantiehuis aan de Maas",
+    subtitle: "Een chalet op palen aan de afgedamde maas met 3 slaapplaatsen is verbouwd tot een 4-persoons vakantiehuis door een deel van de berging bij het woongedeelte te trekken.",
+    coverImage: "/vakantiehuisMaas/20240827_130503.jpg",
+    description: `Een chalet op palen aan de afgedamde maas met 3 slaapplaatsen is verbouwd tot een 4-persoons vakantiehuis door een deel van de berging bij het woongedeelte te trekken.`,
+    challenge: `In de bestaande indeling zat de toegang naar de badkamer in de grotere slaapkamer. In de kleinere slaapkamer kon slechts een 1-persoonsbed staan. De gehele woning had een verlaagd plafond en ademde niet de sfeer uit van wonen aan het water. Er was aan de achterzijde geen toegang tot het terras. Voor de verbouwing was maar een zeer beperkt budget.`,
+    solution: `Door een deel van de naastgelegen berging bij de woning te trekken, kon de grote slaapkamer doorschuiven en de kleine slaapkamer groter gemaakt worden. Deze aanpassing is zodanig uitgevoerd dat de badkamer op de oorspronkelijke locatie kon blijven, maar nu via een gang toegankelijk is. Aan de achterzijde zijn 2e hands openslaande deuren geplaatst. Het verlaagde plafond in de zitkamer/keuken is verwijderd, de keuken vervangen door een iets groter model dat afkomstig is uit een showroomverkoop.`,
+    details: {
+      locatie: "Veen, afgedamde maas",
+      jaar: "2021",
+      oppervlak: "40 m2"
+    },
+    impressies: [
+      "/vakantiehuisMaas/20240827_100219.jpg",
+      "/vakantiehuisMaas/20250502_103131.jpg",
+      "/vakantiehuisMaas/20250502_120715.jpg",
+      "/vakantiehuisMaas/20250505_091759.jpg",
+      "/vakantiehuisMaas/9- Veense Put 262 - 264 Veen.JPG",
+      "/vakantiehuisMaas/10- Veense Put 262 - 264 Veen.JPG",
+      "/vakantiehuisMaas/13- Veense Put 262 - 264 Veen.JPG",
+      "/vakantiehuisMaas/20240827_130503.jpg",
+      "/vakantiehuisMaas/20250502_104112.jpg",
+      "/vakantiehuisMaas/20250502_121323.jpg"
+    ]
+  },
 };
 
 export default function ProjectDetail() {
@@ -159,6 +197,20 @@ export default function ProjectDetail() {
               "/brandweerkazernefotos/20200730_105546.jpg",
             ].map((image, index) => (
               <img key={index} src={image} alt="Impressie Brandweerkazerne" className="w-full h-auto rounded-lg shadow-md" />
+            ))}
+            {id === "vakantiehuisMaas" && [
+              "/vakantiehuisMaas/20240827_100219.jpg",
+              "/vakantiehuisMaas/20250502_103131.jpg",
+              "/vakantiehuisMaas/20250502_120715.jpg",
+              "/vakantiehuisMaas/20250505_091759.jpg",
+              "/vakantiehuisMaas/9- Veense Put 262 - 264 Veen.JPG",
+              "/vakantiehuisMaas/10- Veense Put 262 - 264 Veen.JPG",
+              "/vakantiehuisMaas/13- Veense Put 262 - 264 Veen.JPG",
+              "/vakantiehuisMaas/20240827_130503.jpg",
+              "/vakantiehuisMaas/20250502_104112.jpg",
+              "/vakantiehuisMaas/20250502_121323.jpg"
+            ].map((image, index) => (
+              <img key={index} src={image} alt="Impressie Vakantiehuis aan de Maas" className="w-full h-auto rounded-lg shadow-md" />
             ))}
           </div>
         </div>
