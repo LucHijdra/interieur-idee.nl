@@ -77,7 +77,7 @@ export default function ProjectDetail() {
       >
         <div className="absolute inset-0 bg-black/40 flex items-end">
           <div className="container-custom pb-16">
-            <h1 className="text-4xl font-serif mb-4 text-white">{project.title}</h1>
+            <h1 className="text-4xl font-serif mb-4 text-white text-left">{project.title}</h1>
             <p className="text-xl text-white/90">{project.subtitle}</p>
           </div>
         </div>
