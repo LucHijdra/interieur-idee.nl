@@ -94,8 +94,8 @@ export default function Philosophy() {
               author="Nanette"
             />
             <ReviewCard 
-              text="Fijn om met kennis en kunde te zijn bijgestaan bij het ontwerp van onze benedenverdieping. Naast voorstellen voor indeling en materialen heeft Interieur-Idee ook veel betekend in de realisatie van de verbouwing."
-              author="familie uit Delft"
+              text="Guusje heeft ons tijdens het bouwproces van ons nieuwbouw vakantiehuis professioneel begeleid. Dankzij haar advies beschikken wij over een functionele, ruimer opgezette keuken en een onderscheidende indeling. Zij ondersteunde ons bij de keuze van vloerafwerkingen, keuken, tegels, sanitair en ontwierp het vaste interieur."
+              author="Peter en Marian"
             />
             <ReviewCard 
               text="Door Guusje voelt het echt als 'thuiskomen'! Na onze begane grond verbouwing zijn we weer terug gekomen bij Guusje om onze badkamer te verbouwen. Ze werkt snel, netjes en denkt altijd mee aan creatieve ideeën!"

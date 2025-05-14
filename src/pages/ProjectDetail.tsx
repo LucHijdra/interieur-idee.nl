@@ -46,7 +46,7 @@ const projectData = {
   },
   "brandweerkazerne": {
     title: "Projectinrichting en kleuradvies brandweerkazerne",
-    subtitle: "Een tweede thuis voor drie brandweerteams",
+    subtitle: "Een tweede thuis op het werk",
     coverImage: "/brandweerkazernefotos/20250513_132149.jpg",
     description: `Voor de nieuwe kazerne was nog geen kleur- en materiaalplan opgesteld voor het vaste en losse meubilair, evenals de stoffering. De opdracht richtte zich op de inrichting van diverse ruimten, waaronder de entree, zitkamer, woonkeuken, slaapkamers, kantoren en leslokalen.`,
     challenge: `Binnen de kazerne werken drie teams in ploegendienst. Omdat de kazerne fungeert als hun tweede thuis, was het essentieel dat alle teams zich prettig voelen in de ruimtes ondanks uiteenlopende voorkeuren. Met name het zitcomfort en de robuustheid van de relaxstoelen in de zitkamer waren cruciaal. Daaruit moest men snel kunnen opstaan bij een noodoproep.`,

@@ -18,7 +18,7 @@ const projects = [
   {
     id: "vakantiehuisMaas",
     title: "Vakantiehuis aan de Maas",
-    category: "Herindeling",
+    category: "Leisure",
     imageUrl: "/vakantiehuisMaas/20240827_130503.jpg",
   },
 ];
