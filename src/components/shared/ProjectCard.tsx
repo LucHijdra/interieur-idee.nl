@@ -5,7 +5,7 @@ interface ProjectCardProps {
   id: string;
   title: string;
   category: string;
-  imageUrl: string;
+  imageUrl?: string;
   className?: string;
 }
 
@@ -13,7 +13,7 @@ export default function ProjectCard({
   id,
   title,
   category,
-  imageUrl,
+  imageUrl = "/placeholder.svg",
   className,
 }: ProjectCardProps) {
   return (

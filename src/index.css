@@ -85,13 +85,13 @@
   }
 
   .section {
-    @apply py-12 md:py-16 lg:py-24;
+    @apply py-16 md:py-24;
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 
   .container-custom {
-    @apply container mx-auto px-4 md:px-8 max-w-7xl;
+    @apply container mx-auto px-4 md:px-8;
     max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
@@ -111,7 +111,7 @@
   
   /* Luxury styling additions */
   .luxury-title {
-    @apply font-serif text-3xl md:text-4xl lg:text-5xl font-light tracking-wide leading-tight text-center md:text-left;
+    @apply font-serif text-xl md:text-2xl italic font-light tracking-wide text-center md:text-left;
   }
   
   .luxury-subtitle {
@@ -120,7 +120,11 @@
   
   /* Project page specific styles */
   .project-hero {
-    @apply h-[50vh] md:h-[60vh] lg:h-[70vh] bg-cover bg-center relative;
+    @apply h-[70vh] w-full bg-cover bg-center relative;
+  }
+  
+  .project-card {
+    @apply relative h-[400px] bg-cover bg-center overflow-hidden shadow-lg;
   }
   
   .project-gallery-item {

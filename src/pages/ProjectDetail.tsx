@@ -8,6 +8,7 @@ const projectData = {
   "zondagsschool": {
     title: "Woning in voormalige zondagsschool",
     subtitle: "Transformatie van een historisch pand naar een eigentijdse woning",
+    coverImage: "/lovable-uploads/fotoss/mastenstraat header.jpg",
     description: `Een voormalige zondagsschool uit 1952 is getransformeerd tot een comfortabele woning. Oorspronkelijk bestond het pand uit kantoor- en vergaderruimtes op de begane grond en een grote open ruimte op de verdieping, bereikbaar via binnen- en buitentrap. Het pand is met respect voor de oorspronkelijke structuur herbestemd tot een comfortabele en eigentijdse woning.`,
     challenge: `Het pand had een gesloten zijgevel, een ongelukkig geplaatste trap in een hoek en geen entree aan de straatzijde. Daarnaast ontbrak isolatie in vloer, dak en ramen en bestond de tuin volledig uit stoeptegels.`,
     solution: `Er zijn extra ramen in de zijgevel en dak geplaatst en de trap is centraal in de woning gebracht, wat een open indeling boven mogelijk maakte. De overloop fungeert nu als tweede zitkamer. Het verlaagde plafond is verwijderd en het dak is van buitenaf geïsoleerd, waardoor het originele dakbeschot zichtbaar is gebleven. Alle ramen en vloeren zijn vernieuwd en geïsoleerd. Op de begane grond is een nieuwe entree aan de straatzijde gerealiseerd, wat het pand een duidelijker aanzicht geeft. Tot slot zijn de stoeptegels in de tuin deels vervangen door gras, en zijn er tussenliggend klinkertjes geplaatst.`,
@@ -20,6 +21,7 @@ const projectData = {
   "woonark": {
     title: "Woonark in het Spaarne",
     subtitle: "Een licht en flexibel ontwerp met verspringende niveaus",
+    coverImage: "/lovable-uploads/fotoss/woonark header.jpg",
     description: `Voor deze nieuwe woonark ontwierpen we een licht en open alternatief ter vervanging van een oudere ark met vaste maximale afmetingen. Het nieuwe ontwerp speelt in op de wens voor een licht, ruimtelijk en flexibel geheel.`,
     challenge: `Hoewel de ark bedoeld is voor één persoon, bleek een anderhalf-laagse opzet financieel gunstiger. De wens was een ruimtelijk, loftachtig gevoel en geen gang met kleine kamers. Functionele eisen waren o.a. een entree op kadeniveau, een terras maximaal 40 cm boven het water en een directe verbinding tussen eetkamer en terras.`,
     solution: `Door verschillende niveaus te laten verspringen met telkens 40 cm, ontstonden logische overgangen. De entree en slaapkamer op kadeniveau, keuken en terras iets lager, de zitkamer op waterniveau. Beneden wordt twee derde van de ruimte benut als woonverdieping, de rest als berging. Beneden zijn de ramen in de slaapkamers boven het betonnen casco geplaatst, wat resulteert in verhoogde kozijnen met daglichttoetreding van bovenaf. De uitspringende koven die hierdoor boven ontstaan, worden daar als zitbanken gebruikt. De indeling is flexibel, twee slaapkamers zijn eenvoudig samen te voegen tot één royale ruimte.`,
@@ -32,6 +34,7 @@ const projectData = {
   "brandweerkazerne": {
     title: "Projectinrichting en kleuradvies brandweerkazerne",
     subtitle: "Een tweede thuis voor drie brandweerteams",
+    coverImage: "/lovable-uploads/fotoss/brandweer header.jpg",
     description: `Voor de nieuwe kazerne was nog geen kleur- en materiaalplan opgesteld voor het vaste en losse meubilair, evenals de stoffering. De opdracht richtte zich op de inrichting van diverse ruimten, waaronder de entree, zitkamer, woonkeuken, slaapkamers, kantoren en leslokalen.`,
     challenge: `Binnen de kazerne werken drie teams in ploegendienst. Omdat de kazerne fungeert als hun tweede thuis, was het essentieel dat alle teams zich prettig voelen in de ruimtes ondanks uiteenlopende voorkeuren. Met name het zitcomfort en de robuustheid van de relaxstoelen in de zitkamer waren cruciaal. Daaruit moest men snel kunnen opstaan bij een noodoproep.`,
     solution: `Door vanaf de start alle teams actief te betrekken bij het ontwerpproces, ontstond er draagvlak voor een gezamenlijke visie. De gekozen kleuren en materialen sloten aan op het bestaande architectonisch ontwerp, zodat een harmonieus geheel ontstond. Na het testen van diverse modellen, kozen de teams unaniem voor een relaxstoel met vier poten en een los voetenbankje, uitgevoerd in vier kleuren kunstleer. Daarnaast kregen persoonlijke elementen een plek in het ontwerp. Ingezonden foto’s van medewerkers werden verwerkt tot fotobehang op meerdere locaties in het gebouw.`,
@@ -68,10 +71,15 @@ export default function ProjectDetail() {
   return (
     <>
       {/* Hero Section */}
-      <div className="pt-32 pb-12 bg-cream">
-        <div className="container-custom">
-          <h1 className="text-4xl font-serif mb-4 text-left">{project.title}</h1>
-          <p className="text-xl opacity-90 text-left">{project.subtitle}</p>
+      <div 
+        className="h-[70vh] w-full bg-cover bg-center relative"
+        style={{ backgroundImage: `url(${project.coverImage})` }}
+      >
+        <div className="absolute inset-0 bg-black/40 flex items-end">
+          <div className="container-custom pb-16">
+            <h1 className="text-4xl font-serif mb-4 text-white">{project.title}</h1>
+            <p className="text-xl text-white/90">{project.subtitle}</p>
+          </div>
         </div>
       </div>
       
