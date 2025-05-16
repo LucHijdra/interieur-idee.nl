@@ -33,7 +33,7 @@ const projectData = {
   },
   "woonark": {
     title: "Woonark in het Spaarne",
-    subtitle: "Een licht en flexibel ontwerp met verspringende niveaus",
+    subtitle: "Nieuw ontworpen woonark met twee lagen",
     coverImage: "/woonarkfotos/woonarkheader.jpg",
     description: `Voor deze nieuwe woonark ontwierpen we een licht en open alternatief ter vervanging van een oudere ark met vaste maximale afmetingen. Het nieuwe ontwerp speelt in op de wens voor een licht, ruimtelijk en flexibel geheel.`,
     challenge: `Hoewel de ark bedoeld is voor één persoon, bleek een anderhalf-laagse opzet financieel gunstiger. De wens was een ruimtelijk, loftachtig gevoel en geen gang met kleine kamers. Functionele eisen waren o.a. een entree op kadeniveau, een terras maximaal 40 cm boven het water en een directe verbinding tussen eetkamer en terras.`,
@@ -59,7 +59,7 @@ const projectData = {
   },
   "vakantiehuisMaas": {
     title: "Vakantiehuis aan de Maas",
-    subtitle: "Een chalet op palen aan de afgedamde maas met 3 slaapplaatsen is verbouwd tot een 4-persoons vakantiehuis door een deel van de berging bij het woongedeelte te trekken.",
+    subtitle: "Verbouwing van chalet op palen",
     coverImage: "/vakantiehuisMaas/20240827_130503.jpg",
     description: `Een chalet op palen aan de afgedamde maas met 3 slaapplaatsen is verbouwd tot een 4-persoons vakantiehuis door een deel van de berging bij het woongedeelte te trekken.`,
     challenge: `In de bestaande indeling zat de toegang naar de badkamer in de grotere slaapkamer. In de kleinere slaapkamer kon slechts een 1-persoonsbed staan. De gehele woning had een verlaagd plafond en ademde niet de sfeer uit van wonen aan het water. Er was aan de achterzijde geen toegang tot het terras. Voor de verbouwing was maar een zeer beperkt budget.`,
@@ -166,87 +166,52 @@ export default function ProjectDetail() {
       <section className="section bg-cream">
         <div className="container-custom">
           <h2 className="text-3xl font-serif mb-8 text-left">Impressie</h2>
-          <div className="space-y-12">
-            {id === "zondagsschool" && (
-              <>
-                <div>
-                  <h3 className="text-2xl font-serif mb-4">Voor</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {["/Zondagschoolfotos/Voor/vd Mastenstraat voor.jpg", "/Zondagschoolfotos/Voor/vd Mastenstraat vóór (11).jpg", "/Zondagschoolfotos/Voor/vd Mastenstraat vóór (18).jpg", "/Zondagschoolfotos/Voor/vd Mastenstraat vóór (22).jpg", "/Zondagschoolfotos/Voor/vd Mastenstraat vóór (9).jpg", "/Zondagschoolfotos/Voor/voor1.JPG"].map((image, index) => (
-                      <img key={index} src={image} alt="Voor Zondagsschool" className="w-full max-w-[350px] h-auto rounded-lg shadow-md mx-auto" />
-                    ))}
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-serif mb-4">Na</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {["/Zondagschoolfotos/Na/DSC_7332.JPG", "/Zondagschoolfotos/Na/_R6_0065 © Barbra Verbij klein.jpg", "/Zondagschoolfotos/Na/_R6_0075 © Barbra Verbij klein.jpg", "/Zondagschoolfotos/Na/_R6_0104 © Barbra Verbij klein.jpg", "/Zondagschoolfotos/Na/_R6_0109 © Barbra Verbij klein.jpg", "/Zondagschoolfotos/Na/_R6_0121 © Barbra Verbij klein.jpg", "/Zondagschoolfotos/Na/_R6_0125 3 © Barbra Verbij klein.jpg", "/Zondagschoolfotos/Na/_R6_0138 © Barbra Verbij klein.jpg", "/Zondagschoolfotos/Na/_R6_0147 © Barbra Verbij klein.jpg", "/Zondagschoolfotos/Na/_R6_0149 © Barbra Verbij klein.jpg", "/Zondagschoolfotos/Na/_R6_0162 © Barbra Verbij klein.jpg", "/Zondagschoolfotos/Na/_R6_0173 langer 2 © Barbra Verbij klein.jpg", "/Zondagschoolfotos/Na/_R6_0178 © Barbra Verbij klein.jpg", "/Zondagschoolfotos/Na/_R6_0181 © Barbra Verbij klein.jpg", "/Zondagschoolfotos/Na/mastenstraat header.jpg", "/Zondagschoolfotos/Na/vd Mastensraat na .jpg", "/Zondagschoolfotos/Na/vd Mastenstraat na  (1).jpg"].map((image, index) => (
-                      <img key={index} src={image} alt="Na Zondagsschool" className="w-full max-w-[350px] h-auto rounded-lg shadow-md mx-auto" />
-                    ))}
-                  </div>
-                </div>
-              </>
-            )}
-            {id === "woonark" && (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {[
-                  "/woonarkfotos/WATERZIJDE.JPG",
-                  "/woonarkfotos/WALZIJDE.JPG",
-                  "/woonarkfotos/ZIJGEVELS.JPG",
-                  "/woonarkfotos/1e schetsen.JPG",
-                  "/woonarkfotos/Dia1.JPG",
-                  "/woonarkfotos/IMG-20211111-WA0030.jpg",
-                  "/woonarkfotos/IMG-20211111-WA0031.jpg",
-                  "/woonarkfotos/maps voorgevel.jpg",
-                ].map((image, index) => (
-                  <img
-                    key={index}
-                    src={image}
-                    alt={`Impressie ${project.title}`}
-                    className="w-full max-w-[350px] h-auto rounded-lg shadow-md mx-auto"
-                  />
-                ))}
-              </div>
-            )}
-            {id === "brandweerkazerne" && (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {[
-                  "/brandweerkazernefotos/20250513_132149.jpg",
-                  "/brandweerkazernefotos/IMG-20200730-WA0003.jpg",
-                  "/brandweerkazernefotos/20200730_105546.jpg",
-                ].map((image, index) => (
-                  <img
-                    key={index}
-                    src={image}
-                    alt={`Impressie ${project.title}`}
-                    className="w-full max-w-[350px] h-auto rounded-lg shadow-md mx-auto"
-                  />
-                ))}
-              </div>
-            )}
-            {id === "vakantiehuisMaas" && (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {[
-                  "/vakantiehuisMaas/20240827_100219.jpg",
-                  "/vakantiehuisMaas/20250502_103131.jpg",
-                  "/vakantiehuisMaas/20250502_120715.jpg",
-                  "/vakantiehuisMaas/20250505_091759.jpg",
-                  "/vakantiehuisMaas/9- Veense Put 262 - 264 Veen.JPG",
-                  "/vakantiehuisMaas/10- Veense Put 262 - 264 Veen.JPG",
-                  "/vakantiehuisMaas/13- Veense Put 262 - 264 Veen.JPG",
-                  "/vakantiehuisMaas/20240827_130503.jpg",
-                  "/vakantiehuisMaas/20250502_104112.jpg",
-                  "/vakantiehuisMaas/20250502_121323.jpg",
-                ].map((image, index) => (
-                  <img
-                    key={index}
-                    src={image}
-                    alt={`Impressie ${project.title}`}
-                    className="w-full max-w-[350px] h-auto rounded-lg shadow-md mx-auto"
-                  />
-                ))}
-              </div>
-            )}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {id === "zondagsschool" && [
+              "/Zondagschoolfotos/vd Mastenstraat na uit ppt.jpg",
+              "/Zondagschoolfotos/vd Mastenstraat vóór (11).jpg",
+              "/Zondagschoolfotos/vd Mastenstraat zijgevel na  (1).jpg",
+              "/Zondagschoolfotos/vd Mastenstraat vóór (18).jpg",
+              "/Zondagschoolfotos/vd Mastenstraat vóór (22).jpg",
+              "/Zondagschoolfotos/vd Mastenstraat vóór (9).jpg",
+              "/Zondagschoolfotos/vd Mastenstraat voor.jpg",
+              "/Zondagschoolfotos/voor foto groot eetkamer.JPG",
+            ].map((image, index) => (
+              <img key={index} src={image} alt="Impressie Zondagsschool" className="w-full h-auto rounded-lg shadow-md" />
+            ))}
+            {id === "woonark" && [
+              "/woonarkfotos/WATERZIJDE.JPG",
+              "/woonarkfotos/WALZIJDE.JPG",
+              "/woonarkfotos/ZIJGEVELS.JPG",
+              "/woonarkfotos/1e schetsen.JPG",
+              "/woonarkfotos/Dia1.JPG",
+              "/woonarkfotos/IMG-20211111-WA0030.jpg",
+              "/woonarkfotos/IMG-20211111-WA0031.jpg",
+              "/woonarkfotos/maps voorgevel.jpg",
+            ].map((image, index) => (
+              <img key={index} src={image} alt="Impressie Woonark" className="w-full h-auto rounded-lg shadow-md" />
+            ))}
+            {id === "brandweerkazerne" && [
+              "/brandweerkazernefotos/20250513_132149.jpg",
+              "/brandweerkazernefotos/IMG-20200730-WA0003.jpg",
+              "/brandweerkazernefotos/20200730_105546.jpg",
+            ].map((image, index) => (
+              <img key={index} src={image} alt="Impressie Brandweerkazerne" className="w-full h-auto rounded-lg shadow-md" />
+            ))}
+            {id === "vakantiehuisMaas" && [
+              "/vakantiehuisMaas/20240827_100219.jpg",
+              "/vakantiehuisMaas/20250502_103131.jpg",
+              "/vakantiehuisMaas/20250502_120715.jpg",
+              "/vakantiehuisMaas/20250505_091759.jpg",
+              "/vakantiehuisMaas/9- Veense Put 262 - 264 Veen.JPG",
+              "/vakantiehuisMaas/10- Veense Put 262 - 264 Veen.JPG",
+              "/vakantiehuisMaas/13- Veense Put 262 - 264 Veen.JPG",
+              "/vakantiehuisMaas/20240827_130503.jpg",
+              "/vakantiehuisMaas/20250502_104112.jpg",
+              "/vakantiehuisMaas/20250502_121323.jpg"
+            ].map((image, index) => (
+              <img key={index} src={image} alt="Impressie Vakantiehuis aan de Maas" className="w-full h-auto rounded-lg shadow-md" />
+            ))}
           </div>
         </div>
       </section>
