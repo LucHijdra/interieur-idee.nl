@@ -7,7 +7,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const projectData = {
   "zondagsschool": {
     title: "Woning in voormalige zondagsschool",
-    subtitle: "Transformatie van een historisch pand naar een eigentijdse woning",
+    subtitle: "Transformatie van een gesloten pand naar een woonhuis met een licht en open karakter",
     coverImage: "/lovable-uploads/fotoss/mastenstraat header.jpg",
     description: `Een voormalige zondagsschool uit 1952 is getransformeerd tot een comfortabele woning. Oorspronkelijk bestond het pand uit kantoor- en vergaderruimtes op de begane grond en een grote open ruimte op de verdieping, bereikbaar via binnen- en buitentrap. Het pand is met respect voor de oorspronkelijke structuur herbestemd tot een comfortabele en eigentijdse woning.`,
     challenge: `Het pand had een gesloten zijgevel, een ongelukkig geplaatste trap in een hoek en geen entree aan de straatzijde. Daarnaast ontbrak isolatie in vloer, dak en ramen en bestond de tuin volledig uit stoeptegels.`,
@@ -36,7 +36,7 @@ const projectData = {
     subtitle: "Nieuw ontworpen woonark met twee lagen",
     coverImage: "/woonarkfotos/woonarkheader.jpg",
     description: `Voor deze nieuwe woonark ontwierpen we een licht en open alternatief ter vervanging van een oudere ark met vaste maximale afmetingen. Het nieuwe ontwerp speelt in op de wens voor een licht, ruimtelijk en flexibel geheel.`,
-    challenge: `Hoewel de ark bedoeld is voor één persoon, bleek een anderhalf-laagse opzet financieel gunstiger. De wens was een ruimtelijk, loftachtig gevoel en geen gang met kleine kamers. Functionele eisen waren o.a. een entree op kadeniveau, een terras maximaal 40 cm boven het water en een directe verbinding tussen eetkamer en terras.`,
+    challenge: `Hoewel de ark bedoeld is voor één persoon, bleek een twee-laagse opzet financieel gunstiger. De wens was een ruimtelijk, loftachtig gevoel en geen gang met kleine kamers. Functionele eisen waren o.a. een entree op kadeniveau, een terras maximaal 40 cm boven het water en een directe verbinding tussen eetkamer en terras.`,
     solution: `Door verschillende niveaus te laten verspringen met telkens 40 cm, ontstonden logische overgangen. De entree en slaapkamer op kadeniveau, keuken en terras iets lager, de zitkamer op waterniveau. Beneden wordt twee derde van de ruimte benut als woonverdieping, de rest als berging. Beneden zijn de ramen in de slaapkamers boven het betonnen casco geplaatst, wat resulteert in verhoogde kozijnen met daglichttoetreding van bovenaf. De uitspringende koven die hierdoor boven ontstaan, worden daar als zitbanken gebruikt. De indeling is flexibel, twee slaapkamers zijn eenvoudig samen te voegen tot één royale ruimte.`,
     details: {
       locatie: "Haarlem, Spaarne",
@@ -264,6 +264,9 @@ export default function ProjectDetail() {
                   ))}
                 </div>
               </div>
+              <div className="pt-4">
+                <p className="text-sm text-gray-500 italic text-left">fotografie: Barbra Verbij</p>
+              </div>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -276,6 +279,7 @@ export default function ProjectDetail() {
                 "/woonarkfotos/IMG-20211111-WA0030.jpg",
                 "/woonarkfotos/IMG-20211111-WA0031.jpg",
                 "/woonarkfotos/maps voorgevel.jpg",
+                "/woonarkfotos/woonarkheader.jpg"
               ].map((image, index) => (
                 <img key={index} src={image} alt="Impressie Woonark" className="w-full h-auto rounded-lg shadow-md" />
               ))}
