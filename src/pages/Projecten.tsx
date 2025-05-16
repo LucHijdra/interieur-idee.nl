@@ -40,7 +40,7 @@ export default function Projecten() {
         <div className="container-custom">
           <SectionTitle
             title="Onze projecten"
-            subtitle="Bekijk een selectie van onze recente en kenmerkende projecten voor zowel particuliere als zakelijke opdrachtgevers."
+            subtitle="Bekijk een selectie van onze projecten voor zowel particuliere als zakelijke opdrachtgevers."
           />
         </div>
       </section>
