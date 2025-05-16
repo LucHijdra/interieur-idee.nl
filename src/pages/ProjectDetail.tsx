@@ -112,7 +112,13 @@ export default function ProjectDetail() {
       <section
         className="relative h-[500px] bg-cover bg-center"
         style={{
-          backgroundImage: `url(${id === "zondagsschool" ? "/Zondagschoolfotos/mastenstraatheader.jpg" : project.coverImage})`,
+          backgroundImage: `url(${
+            id === "vakantiehuisMaas"
+              ? "/vakantiehuisMaas/20240827_100219.jpg"
+              : id === "zondagsschool"
+              ? "/Zondagschoolfotos/mastenstraatheader.jpg"
+              : project.coverImage
+          })`,
         }}
       >
         <div className="absolute inset-0 bg-black opacity-30"></div>
