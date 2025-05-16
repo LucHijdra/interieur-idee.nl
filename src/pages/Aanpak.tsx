@@ -107,9 +107,9 @@ export default function Aanpak() {
           {/* Desktop view - static images */}
           <div className="hidden md:grid md:grid-cols-3 gap-8">
             {[
-              '/lovable-uploads/DSC_7332.JPG',
+              '/lovable-uploads/fotoss/Afbeelding van WhatsApp op 2025-05-16 om 17.01.44_9e7a0e4e.jpg',
               '/lovable-uploads/fotoss/_R6_0178 © Barbra Verbij klein.jpg',
-              '/lovable-uploads/fotoss/_R6_0181 © Barbra Verbij klein.jpg'
+              '/lovable-uploads/fotoss/Afbeelding van WhatsApp op 2025-05-16 om 17.01.44_18dce4d4.jpg'
             ].map((image, index) => (
               <div key={index} className="relative w-full pb-[177.78%]">
                 <div 
@@ -136,9 +136,9 @@ export default function Aanpak() {
             >
               <CarouselContent>
                 {[
-                  '/lovable-uploads/DSC_7332.JPG',
+                  '/lovable-uploads/fotoss/Afbeelding van WhatsApp op 2025-05-16 om 17.01.44_9e7a0e4e.jpg',
                   '/lovable-uploads/fotoss/_R6_0178 © Barbra Verbij klein.jpg',
-                  '/lovable-uploads/fotoss/_R6_0181 © Barbra Verbij klein.jpg'
+                  '/lovable-uploads/fotoss/Afbeelding van WhatsApp op 2025-05-16 om 17.01.44_18dce4d4.jpg'
                 ].map((image, index) => (
                   <CarouselItem key={index}>
                     <div className="relative w-full pb-[177.78%]">

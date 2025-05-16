@@ -22,11 +22,7 @@ export default function Contact() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h3 className="mb-6">Contactgegevens</h3>
-              <p className="mb-6">
-                Wij denken graag met je mee en zetten samen de eerste
-                stap richting een interieur dat volledig bij je past.
-              </p>
+              <h3 className="mb-6 text-left">Contactgegevens</h3>
               
               <div className="mb-8 flex items-start">
                 <MapPin className="mr-2 mt-1 text-taupe" size={20} />
