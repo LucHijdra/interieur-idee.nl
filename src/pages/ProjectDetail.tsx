@@ -209,20 +209,64 @@ export default function ProjectDetail() {
                 </div>
               </div>
             </div>
+          ) : id === "zondagsschool" ? (
+            <div className="space-y-12">
+              <div>
+                <h3 className="text-xl font-medium mb-6 text-left">Voor verbouwing</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {[
+                    "/Zondagschoolfotos/Voor/tuin zondagsschool extra 1.jpg",
+                    "/Zondagschoolfotos/Voor/vd Mastenstraat voor.jpg",
+                    "/Zondagschoolfotos/Voor/vd Mastenstraat vóór (11).jpg",
+                    "/Zondagschoolfotos/Voor/vd Mastenstraat vóór (18).jpg",
+                    "/Zondagschoolfotos/Voor/vd Mastenstraat vóór (22).jpg",
+                    "/Zondagschoolfotos/Voor/vd Mastenstraat vóór (9).jpg",
+                    "/Zondagschoolfotos/Voor/voor1.JPG"
+                  ].map((image, index) => (
+                    <img
+                      key={index}
+                      src={image}
+                      alt="Zondagsschool voor verbouwing"
+                      className="w-full h-[400px] object-cover rounded-lg shadow-md"
+                    />
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-medium mb-6 text-left">Na verbouwing</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {[
+                    "/Zondagschoolfotos/Na/DSC_7332.JPG",
+                    "/Zondagschoolfotos/Na/_R6_0065 © Barbra Verbij klein.jpg",
+                    "/Zondagschoolfotos/Na/_R6_0075 © Barbra Verbij klein.jpg",
+                    "/Zondagschoolfotos/Na/_R6_0104 © Barbra Verbij klein.jpg",
+                    "/Zondagschoolfotos/Na/_R6_0109 © Barbra Verbij klein.jpg",
+                    "/Zondagschoolfotos/Na/_R6_0121 © Barbra Verbij klein.jpg",
+                    "/Zondagschoolfotos/Na/_R6_0125 3 © Barbra Verbij klein.jpg",
+                    "/Zondagschoolfotos/Na/_R6_0138 © Barbra Verbij klein.jpg",
+                    "/Zondagschoolfotos/Na/_R6_0147 © Barbra Verbij klein.jpg",
+                    "/Zondagschoolfotos/Na/_R6_0149 © Barbra Verbij klein.jpg",
+                    "/Zondagschoolfotos/Na/_R6_0162 © Barbra Verbij klein.jpg",
+                    "/Zondagschoolfotos/Na/_R6_0173 langer 2 © Barbra Verbij klein.jpg",
+                    "/Zondagschoolfotos/Na/_R6_0178 © Barbra Verbij klein.jpg",
+                    "/Zondagschoolfotos/Na/_R6_0181 © Barbra Verbij klein.jpg",
+                    "/Zondagschoolfotos/Na/mastenstraat header.jpg",
+                    "/Zondagschoolfotos/Na/tuin zondagsschool extra 2.jpg",
+                    "/Zondagschoolfotos/Na/vd Mastensraat na .jpg",
+                    "/Zondagschoolfotos/Na/vd Mastenstraat na  (1).jpg"
+                  ].map((image, index) => (
+                    <img
+                      key={index}
+                      src={image}
+                      alt="Zondagsschool na verbouwing"
+                      className="w-full h-[400px] object-cover rounded-lg shadow-md"
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {id === "zondagsschool" && [
-                "/Zondagschoolfotos/vd Mastenstraat na uit ppt.jpg",
-                "/Zondagschoolfotos/vd Mastenstraat vóór (11).jpg",
-                "/Zondagschoolfotos/vd Mastenstraat zijgevel na  (1).jpg",
-                "/Zondagschoolfotos/vd Mastenstraat vóór (18).jpg",
-                "/Zondagschoolfotos/vd Mastenstraat vóór (22).jpg",
-                "/Zondagschoolfotos/vd Mastenstraat vóór (9).jpg",
-                "/Zondagschoolfotos/vd Mastenstraat voor.jpg",
-                "/Zondagschoolfotos/voor foto groot eetkamer.JPG",
-              ].map((image, index) => (
-                <img key={index} src={image} alt="Impressie Zondagsschool" className="w-full h-auto rounded-lg shadow-md" />
-              ))}
               {id === "woonark" && [
                 "/woonarkfotos/WATERZIJDE.JPG",
                 "/woonarkfotos/WALZIJDE.JPG",
@@ -241,6 +285,17 @@ export default function ProjectDetail() {
                 "/brandweerkazernefotos/20200730_105546.jpg",
               ].map((image, index) => (
                 <img key={index} src={image} alt="Impressie Brandweerkazerne" className="w-full h-auto rounded-lg shadow-md" />
+              ))}
+              {/* Extra WhatsApp foto's */}
+              {id === "brandweerkazerne" && [
+                "/brandweerkazernefotos/Afbeelding van WhatsApp op 2025-05-16 om 17.01.45_1be2a254.jpg",
+                "/brandweerkazernefotos/Afbeelding van WhatsApp op 2025-05-16 om 17.01.45_4c3d3256.jpg",
+                "/brandweerkazernefotos/Afbeelding van WhatsApp op 2025-05-16 om 17.01.45_960fc76a.jpg",
+                "/brandweerkazernefotos/Afbeelding van WhatsApp op 2025-05-16 om 17.01.45_29296cd8.jpg",
+                "/brandweerkazernefotos/Afbeelding van WhatsApp op 2025-05-16 om 17.01.45_c3af1056.jpg",
+                "/brandweerkazernefotos/Afbeelding van WhatsApp op 2025-05-16 om 17.01.46_eabe12a5.jpg"
+              ].map((image, index) => (
+                <img key={"whatsapp-"+index} src={image} alt="Impressie Brandweerkazerne extra" className="w-full h-auto rounded-lg shadow-md" />
               ))}
             </div>
           )}
