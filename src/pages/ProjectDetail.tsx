@@ -146,10 +146,6 @@ export default function ProjectDetail() {
                   <p className="text-sm text-gray-500">Locatie</p>
                   <p>{project.details.locatie}</p>
                 </div>
-                <div>
-                  <p className="text-sm text-gray-500">Jaar</p>
-                  <p>{project.details.jaar}</p>
-                </div>
                 {project.details.oppervlak && (
                   <div>
                     <p className="text-sm text-gray-500">Oppervlak</p>
@@ -166,72 +162,82 @@ export default function ProjectDetail() {
       <section className="section bg-cream">
         <div className="container-custom">
           <h2 className="text-3xl font-serif mb-8 text-left">Impressie</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {id === "zondagsschool" && [
-              "/Zondagschoolfotos/vd Mastenstraat na uit ppt.jpg",
-              "/Zondagschoolfotos/vd Mastenstraat vóór (11).jpg",
-              "/Zondagschoolfotos/vd Mastenstraat zijgevel na  (1).jpg",
-              "/Zondagschoolfotos/vd Mastenstraat vóór (18).jpg",
-              "/Zondagschoolfotos/vd Mastenstraat vóór (22).jpg",
-              "/Zondagschoolfotos/vd Mastenstraat vóór (9).jpg",
-              "/Zondagschoolfotos/vd Mastenstraat voor.jpg",
-              "/Zondagschoolfotos/voor foto groot eetkamer.JPG",
-            ].map((image, index) => (
-              <img key={index} src={image} alt="Impressie Zondagsschool" className="w-full h-auto rounded-lg shadow-md" />
-            ))}
-            {id === "woonark" && [
-              "/woonarkfotos/WATERZIJDE.JPG",
-              "/woonarkfotos/WALZIJDE.JPG",
-              "/woonarkfotos/ZIJGEVELS.JPG",
-              "/woonarkfotos/1e schetsen.JPG",
-              "/woonarkfotos/Dia1.JPG",
-              "/woonarkfotos/IMG-20211111-WA0030.jpg",
-              "/woonarkfotos/IMG-20211111-WA0031.jpg",
-              "/woonarkfotos/maps voorgevel.jpg",
-            ].map((image, index) => (
-              <img key={index} src={image} alt="Impressie Woonark" className="w-full h-auto rounded-lg shadow-md" />
-            ))}
-            {id === "brandweerkazerne" && [
-              "/brandweerkazernefotos/20250513_132149.jpg",
-              "/brandweerkazernefotos/IMG-20200730-WA0003.jpg",
-              "/brandweerkazernefotos/20200730_105546.jpg",
-            ].map((image, index) => (
-              <img key={index} src={image} alt="Impressie Brandweerkazerne" className="w-full h-auto rounded-lg shadow-md" />
-            ))}
-            {id === "vakantiehuisMaas" && (
-              <>
-                <div className="space-y-4">
-                  <h3 className="text-xl font-medium">Voor verbouwing</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    {[
-                      "/vakantiehuisMaas/9- Veense Put 262 - 264 Veen.JPG",
-                      "/vakantiehuisMaas/10- Veense Put 262 - 264 Veen.JPG",
-                      "/vakantiehuisMaas/13- Veense Put 262 - 264 Veen.JPG"
-                    ].map((image, index) => (
-                      <img key={index} src={image} alt="Vakantiehuis voor verbouwing" className="w-full h-auto rounded-lg shadow-md" />
-                    ))}
-                  </div>
+          {id === "vakantiehuisMaas" ? (
+            <div className="space-y-12">
+              <div>
+                <h3 className="text-xl font-medium mb-6 text-left">Voor verbouwing</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {[
+                    "/vakantiehuisMaas/9- Veense Put 262 - 264 Veen.JPG",
+                    "/vakantiehuisMaas/10- Veense Put 262 - 264 Veen.JPG",
+                    "/vakantiehuisMaas/13- Veense Put 262 - 264 Veen.JPG"
+                  ].map((image, index) => (
+                    <img
+                      key={index}
+                      src={image}
+                      alt="Vakantiehuis voor verbouwing"
+                      className="w-full h-[400px] object-cover rounded-lg shadow-md"
+                    />
+                  ))}
                 </div>
-                
-                <div className="space-y-4 mt-8">
-                  <h3 className="text-xl font-medium">Na verbouwing</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    {[
-                      "/vakantiehuisMaas/20240827_100219.jpg",
-                      "/vakantiehuisMaas/20250502_103131.jpg",
-                      "/vakantiehuisMaas/20250502_120715.jpg",
-                      "/vakantiehuisMaas/20250505_091759.jpg",
-                      "/vakantiehuisMaas/20240827_130503.jpg",
-                      "/vakantiehuisMaas/20250502_104112.jpg",
-                      "/vakantiehuisMaas/20250502_121323.jpg"
-                    ].map((image, index) => (
-                      <img key={index} src={image} alt="Vakantiehuis na verbouwing" className="w-full h-auto rounded-lg shadow-md" />
-                    ))}
-                  </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-medium mb-6 text-left">Na verbouwing</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {[
+                    "/vakantiehuisMaas/20240827_100219.jpg",
+                    "/vakantiehuisMaas/20250502_103131.jpg",
+                    "/vakantiehuisMaas/20250502_120715.jpg",
+                    "/vakantiehuisMaas/20250505_091759.jpg",
+                    "/vakantiehuisMaas/20240827_130503.jpg",
+                    "/vakantiehuisMaas/20250502_104112.jpg",
+                    "/vakantiehuisMaas/20250502_121323.jpg"
+                  ].map((image, index) => (
+                    <img
+                      key={index}
+                      src={image}
+                      alt="Vakantiehuis na verbouwing"
+                      className="w-full h-[400px] object-cover rounded-lg shadow-md"
+                    />
+                  ))}
                 </div>
-              </>
-            )}
-          </div>
+              </div>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {id === "zondagsschool" && [
+                "/Zondagschoolfotos/vd Mastenstraat na uit ppt.jpg",
+                "/Zondagschoolfotos/vd Mastenstraat vóór (11).jpg",
+                "/Zondagschoolfotos/vd Mastenstraat zijgevel na  (1).jpg",
+                "/Zondagschoolfotos/vd Mastenstraat vóór (18).jpg",
+                "/Zondagschoolfotos/vd Mastenstraat vóór (22).jpg",
+                "/Zondagschoolfotos/vd Mastenstraat vóór (9).jpg",
+                "/Zondagschoolfotos/vd Mastenstraat voor.jpg",
+                "/Zondagschoolfotos/voor foto groot eetkamer.JPG",
+              ].map((image, index) => (
+                <img key={index} src={image} alt="Impressie Zondagsschool" className="w-full h-auto rounded-lg shadow-md" />
+              ))}
+              {id === "woonark" && [
+                "/woonarkfotos/WATERZIJDE.JPG",
+                "/woonarkfotos/WALZIJDE.JPG",
+                "/woonarkfotos/ZIJGEVELS.JPG",
+                "/woonarkfotos/1e schetsen.JPG",
+                "/woonarkfotos/Dia1.JPG",
+                "/woonarkfotos/IMG-20211111-WA0030.jpg",
+                "/woonarkfotos/IMG-20211111-WA0031.jpg",
+                "/woonarkfotos/maps voorgevel.jpg",
+              ].map((image, index) => (
+                <img key={index} src={image} alt="Impressie Woonark" className="w-full h-auto rounded-lg shadow-md" />
+              ))}
+              {id === "brandweerkazerne" && [
+                "/brandweerkazernefotos/20250513_132149.jpg",
+                "/brandweerkazernefotos/IMG-20200730-WA0003.jpg",
+                "/brandweerkazernefotos/20200730_105546.jpg",
+              ].map((image, index) => (
+                <img key={index} src={image} alt="Impressie Brandweerkazerne" className="w-full h-auto rounded-lg shadow-md" />
+              ))}
+            </div>
+          )}
         </div>
       </section>
       
