@@ -215,7 +215,6 @@ export default function ProjectDetail() {
                 <h3 className="text-xl font-medium mb-6 text-left">Voor verbouwing</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {[
-                    "/Zondagschoolfotos/Voor/tuin zondagsschool extra 1.jpg",
                     "/Zondagschoolfotos/Voor/vd Mastenstraat voor.jpg",
                     "/Zondagschoolfotos/Voor/vd Mastenstraat vóór (11).jpg",
                     "/Zondagschoolfotos/Voor/vd Mastenstraat vóór (18).jpg",
@@ -253,7 +252,7 @@ export default function ProjectDetail() {
                     "/Zondagschoolfotos/Na/mastenstraat header.jpg",
                     "/Zondagschoolfotos/Na/tuin zondagsschool extra 2.jpg",
                     "/Zondagschoolfotos/Na/vd Mastensraat na .jpg",
-                    "/Zondagschoolfotos/Na/vd Mastenstraat na  (1).jpg"
+                    "/Zondagschoolfotos/Na/tuin zondagsschool extra 1.jpg"
                   ].map((image, index) => (
                     <img
                       key={index}
@@ -312,8 +311,8 @@ export default function ProjectDetail() {
           <div className="container-custom">
             <h2 className="text-3xl font-serif mb-8 text-left">Plattegronden</h2>
             <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
-              <img src="/plattegronden/17.png" alt="Plattegrond Zondagsschool 1" className="w-full max-w-md h-auto rounded-lg shadow-md" />
-              <img src="/plattegronden/18.png" alt="Plattegrond Zondagsschool 2" className="w-full max-w-md h-auto rounded-lg shadow-md" />
+              <img src="/plattegronden/vakantiehuisplattegrond (2).png" alt="Plattegrond Zondagsschool 1" className="w-full max-w-md h-auto rounded-lg shadow-md" />
+              <img src="/plattegronden/vakantiehuisplattegrond (1).png" alt="Plattegrond Zondagsschool 2" className="w-full max-w-md h-auto rounded-lg shadow-md" />
             </div>
           </div>
         </section>

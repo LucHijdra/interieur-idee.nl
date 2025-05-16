@@ -42,7 +42,7 @@ export default function Aanpak() {
               </p>
             </div>
             <div className="flex flex-col">
-              <div className="h-[500px] bg-contain bg-center bg-no-repeat" style={{ backgroundImage: "url('/lovable-uploads/Interieur-Idee draagt creatieve en vaak kostenbesparende oplossingen aan door de contacten die door de jaren heen verworven zijn..png')" }}></div>
+              <div className="h-[500px] bg-contain bg-center bg-no-repeat" style={{ backgroundImage: "url('/lovable-uploads/aanpakinterieur.png')" }}></div>
             </div>
           </div>
         </div>
